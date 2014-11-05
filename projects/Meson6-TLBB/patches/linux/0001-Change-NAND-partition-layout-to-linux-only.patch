@@ -1,0 +1,59 @@
+From dac17125d141ca7cb47e505593fff6e494bacb5f Mon Sep 17 00:00:00 2001
+From: j1nx <p.steenbergen@j1nx.nl>
+Date: Wed, 5 Nov 2014 19:51:06 +0100
+Subject: [PATCH 1/1] Change NAND partition layout to linux only
+
+---
+ arch/arm/boot/dts/amlogic/meson6_g18.dtd | 24 ++++++++----------------
+ 1 file changed, 8 insertions(+), 16 deletions(-)
+
+diff --git a/arch/arm/boot/dts/amlogic/meson6_g18.dtd b/arch/arm/boot/dts/amlogic/meson6_g18.dtd
+index 8083926..10a4f9b 100755
+--- a/arch/arm/boot/dts/amlogic/meson6_g18.dtd
++++ b/arch/arm/boot/dts/amlogic/meson6_g18.dtd
+@@ -833,34 +833,26 @@ void root_func(){
+ 				
+ 		nand_partitions:nand_partition{
+ 			logo{
+-				offset=<0x0 0x4800000>;
+-				size=<0x0 0x800000>;
+-			};
+-			aml_logo{
+-				offset=<0x0 0x5800000>;
++				offset=<0x0 0x4000000>;
+ 				size=<0x0 0x800000>;
+ 			};
+ 			recovery{
+-				offset=<0x0 0x6800000>;
++				offset=<0x0 0x5000000>;
+ 				size=<0x0 0x800000>;
+ 			};
+ 			boot{
+-				offset=<0x0 0x8800000>;
++				offset=<0x0 0x6800000>;
+ 				size=<0x0 0x800000>;
+ 			};
+ 			system{
+-				offset=<0x0 0xa800000>;
+-				size=<0x0 0x40000000>;
++				offset=<0x0 0x8000000>;
++				size=<0x0 0x10000000>;
+ 			};
+ 			cache{
+-				offset=<0x0 0x4a800000>;
+-				size=<0x0 0x20000000>;
++				offset=<0x0 0x18000000>;
++				size=<0x0 0x10000000>;
+ 			};
+-			backup{
+-				offset=<0x0 0x6a800000>;
+-				size=<0x0 0x10000000>;
+-			};
+-			userdata{
++			data{
+ 				offset=<0xffffffff 0xffffffff>;
+ 				size=<0x0 0x0>;
+ 			};
+-- 
+1.9.1
+
