@@ -1,0 +1,13 @@
+diff --git a/librtmp/Makefile b/librtmp/Makefile
+index 74ee3b5..1b34772 100644
+--- a/librtmp/Makefile
++++ b/librtmp/Makefile
+@@ -31,7 +31,7 @@ LIBS_mingw=-lws2_32 -lwinmm -lgdi32
+ LIB_GNUTLS=-lgnutls -lhogweed -lnettle -lgmp $(LIBZ)
+ LIB_OPENSSL=-lssl -lcrypto $(LIBZ)
+ LIB_POLARSSL=-lpolarssl $(LIBZ)
+-PRIVATE_LIBS=$(LIBS_$(SYS))
++PRIVATE_LIBS=$(LIBS_$(SYS)) $(XLIBS)
+ CRYPTO_LIB=$(LIB_$(CRYPTO)) $(PRIVATE_LIBS)
+ CRYPTO_REQ=$(REQ_$(CRYPTO))
+ CRYPTO_DEF=$(DEF_$(CRYPTO))
