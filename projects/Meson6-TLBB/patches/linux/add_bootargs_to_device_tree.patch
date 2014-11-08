@@ -7,7 +7,7 @@ index e5b6075..d21c1c2 100755
  	#address-cells = <1>;
  	#size-cells = <1>;
 +	chosen {
-+	    bootargs = "root=/dev/ram0 rdinit=/init boot=/dev/system disk=/dev/data BOOT_IMAGE=/dev/mtd3 console=tty0 consoleblank=0 quiet";
++	    bootargs = "root=/dev/ram0 rdinit=/init boot=/dev/system disk=/dev/data BOOT_IMAGE=/dev/mtd2 console=tty0 consoleblank=0 quiet";
 +	};
  	
  /// ***************************************************************************************
