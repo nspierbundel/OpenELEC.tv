@@ -1,0 +1,25 @@
+From eb0273cccad2d3c62d312734faf6b80028a49f9b Mon Sep 17 00:00:00 2001
+From: j1nx <p.steenbergen@j1nx.nl>
+Date: Thu, 28 Aug 2014 21:52:08 +0200
+Subject: [PATCH 1/1] [AML] Enable keyboard auto repeat
+
+---
+ xbmc/input/linux/LinuxInputDevices.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/xbmc/input/linux/LinuxInputDevices.cpp b/xbmc/input/linux/LinuxInputDevices.cpp
+index ee21474..f13b8c3 100644
+--- a/xbmc/input/linux/LinuxInputDevices.cpp
++++ b/xbmc/input/linux/LinuxInputDevices.cpp
+@@ -763,7 +763,7 @@ void CLinuxInputDevice::SetupKeyboardAutoRepeat(int fd)
+     // where if the cpu is max'ed then key up is missed and
+     // we get a flood of EV_REP that never stop until next
+     // key down/up. Very nasty when seeking during video playback.
+-    enable = false;
++    enable = true;
+   }
+ #endif
+ 
+-- 
+1.9.1
+
