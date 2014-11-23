@@ -92,10 +92,7 @@
   UBOOT_CONFIGFILE=""
 
 # Kernel target for u-boot (default 'uImage' if BOOTLOADER=u-boot) (uImage / zImage)
-  KERNEL_UBOOT_TARGET="uImage-dtb"
-
-# Kernel extra targets to build
-  KERNEL_UBOOT_EXTRA_TARGET="meson6_g18.dtd"
+  KERNEL_UBOOT_TARGET="uImage"
 
 # Additional kernel make parameters (for example to specify the u-boot loadaddress)
   KERNEL_MAKE_EXTRACMD=""
@@ -240,9 +237,6 @@
 
 # OpenGL(X) implementation to use (no / Mesa)
   OPENGL="no"
-
-# OpenGL-ES implementation to use (no / bcm2835-driver)
-  OPENGLES="opengl-meson6"
 
 # Windowmanager to use (ratpoison / fluxbox / none)
   WINDOWMANAGER="none"
