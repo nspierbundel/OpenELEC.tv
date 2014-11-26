@@ -1,0 +1,13 @@
+[Unit]
+Description=Copy TLBB skin into user profile directory
+DefaultDependencies=no
+Before=local-fs.target shutdown.target
+Conflicts=shutdown.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "mkdir -p /storage/.xbmc/addons/skin.tlbb; false | cp -iR /usr/share/xbmc/addons/skin.tlbb /storage/.xbmc/addons/ &>/dev/null"
+RemainAfterExit=yes
+
+[Install]
+WantedBy=local-fs.target
