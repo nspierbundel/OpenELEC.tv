@@ -131,15 +131,12 @@ def clean(text):
 def main():
     utils.CheckVersion()
 
-    addSuperSearch()
-
-    profile = xbmc.translatePath(PROFILE)
-
+    profile = utils.getBackPath()
     #addNewFolderItem(profile)
     
     addNewContent(profile)
-
-    parseFolder(profile,[])
+    #data = parseContent(profile)
+    parseFolder(profile, [])
 
 
 def addSuperSearch():
@@ -510,11 +507,11 @@ def addContent(path):
 
     #elif option1 == 1:
         #Online Content
-    option2 = xbmcgui.Dialog().select('Streaming Content',['Official Content','3rd Party Content'])
+    option2 = xbmcgui.Dialog().select('Streaming Content', ['Official Content','3rd Party Content'], autoclose = 0)
     if option2 == 0:
         #Official content
         xbmc.executebuiltin( "ActivateWindow(busydialog)" )
-        xbmc.executebuiltin("ActivateWindow(10025,%s?mode=%d&path=%s)"% (sys.argv[0], _OFFICIALSTREAM,  urllib.quote_plus(path)))
+        xbmc.executebuiltin("ActivateWindow(10025,%s?mode=%d&path=%s,return)"% (sys.argv[0], _OFFICIALSTREAM,  urllib.quote_plus(path)))
         mode = -2
 
     elif option2 == 1:
@@ -524,39 +521,53 @@ def addContent(path):
             return
         elif choice == 1:
             xbmc.executebuiltin( "ActivateWindow(busydialog)" )
-            xbmc.executebuiltin("ActivateWindow(10025,%s?mode=%d&path=%s)"% (sys.argv[0], _3RDPARTYSTREAM,  urllib.quote_plus(path)))
+            xbmc.executebuiltin("ActivateWindow(10025,%s?mode=%d&path=%s,return)"% (sys.argv[0], _3RDPARTYSTREAM,  urllib.quote_plus(path)))
     
 def streamingContent(path,formal_mode):
-    category    = os.path.basename(path)
-    if category == "TLBB Content":
-        xmlUrl  = 'http://54.186.247.241//getXML/?parent=None'
+    BASE_URL = 'http://portal.thelittleblackbox.com/'
 
-        if formal_mode   == _OFFICIALSTREAM:
-            xbmc.executebuiltin("ActivateWindow(10025,%s?mode=%d&path=%s&url=%s&filetype=official)"% (sys.argv[0], _ADDONLIST,  urllib.quote_plus(path),urllib.quote_plus(xmlUrl)))
-        elif formal_mode == _3RDPARTYSTREAM:
-            xbmc.executebuiltin("ActivateWindow(10025,%s?mode=%d&path=%s&url=%s&filetype=unofficial)"% (sys.argv[0], _ADDONLIST,  urllib.quote_plus(path),urllib.quote_plus(xmlUrl)))
+    try:
+        category    = os.path.basename(path)
+        if category == "TLBB Content":
+            xmlUrl  = BASE_URL + 'getXML/?parent=None'
+    
+            if formal_mode   == _OFFICIALSTREAM:
+                xbmc.executebuiltin("ActivateWindow(10025,%s?mode=%d&path=%s&name=%s&url=%s&filetype=official,return)"% (sys.argv[0], _ADDONLIST,  urllib.quote_plus(path), category, urllib.quote_plus(xmlUrl)))
+            elif formal_mode == _3RDPARTYSTREAM:
+                xbmc.executebuiltin("ActivateWindow(10025,%s?mode=%d&path=%s&name=%s&url=%s&filetype=unofficial,return)"% (sys.argv[0], _ADDONLIST,  urllib.quote_plus(path), category, urllib.quote_plus(xmlUrl)))
+    
+        else:
+            Url      = BASE_URL + 'getXML/?parent=None'
+            link     = totalinstaller.OPEN_URL(Url)
+            matchDir = re.compile('<dir><title>(.+?)</title><link>(.+?)</link><thumbnail>(.+?)</thumbnail></dir>').findall(link)
+            xmlUrl=''
+    
+            if matchDir == []:
+                xbmc.executebuiltin( "Dialog.Close(busydialog)" )
+                xbmcgui.Dialog().ok('Error','Invalid request')
+                return
+    
+            for title,link,thumbnail in matchDir:
+                if title == category:
+                    xmlUrl = link
+    
+            if   formal_mode == _OFFICIALSTREAM:
+                xbmc.executebuiltin("ActivateWindow(10025,%s?mode=%d&path=%s&name=%s&url=%s&filetype=official)"% (sys.argv[0], _ADDONLIST,  urllib.quote_plus(path), category, urllib.quote_plus(xmlUrl)))
+            elif formal_mode == _3RDPARTYSTREAM:
+                xbmc.executebuiltin("ActivateWindow(10025,%s?mode=%d&path=%s&name=%s&url=%s&filetype=unofficial)"% (sys.argv[0], _ADDONLIST,  urllib.quote_plus(path), category, urllib.quote_plus(xmlUrl)))
+        return
+    
+    except Exception as e:
+        xbmc.executebuiltin("Dialog.Close(busydialog)")
+        xbmcgui.Dialog().ok('Error','Data fetching failed')
+        print e
+        path      = utils.getCurrentPath()
+        thepath   = xbmc.translatePath(path)
+        label     = os.path.basename(thepath)
+        link      = "ReplaceWindow(10025,%s?label=%s&mode=%d&path=%s)" % (sys.argv[0] , label, 400, urllib.quote_plus(thepath)) 
 
-    else:
-        Url      = 'http://54.186.247.241//getXML/?parent=None'
-        link     = totalinstaller.OPEN_URL(Url)
-        matchDir = re.compile('<dir><title>(.+?)</title><link>(.+?)</link><thumbnail>(.+?)</thumbnail></dir>').findall(link)
-        xmlUrl=''
-
-        if matchDir == []:
-            xbmcgui.Dialog().ok('Error','Invalid request')
-            return
-
-        for title,link,thumbnail in matchDir:
-            if title == category:
-                xmlUrl = link
-
-        if   formal_mode == _OFFICIALSTREAM:
-            xbmc.executebuiltin("ActivateWindow(10025,%s?mode=%d&path=%s&url=%s&filetype=official)"% (sys.argv[0], _ADDONLIST,  urllib.quote_plus(path),urllib.quote_plus(xmlUrl)))
-        elif formal_mode == _3RDPARTYSTREAM:
-            xbmc.executebuiltin("ActivateWindow(10025,%s?mode=%d&path=%s&url=%s&filetype=unofficial)"% (sys.argv[0], _ADDONLIST,  urllib.quote_plus(path),urllib.quote_plus(xmlUrl)))
-
-    return
-
+        xbmc.executebuiltin(link)
+ 
 def parseContent(path):
     
     dbFile       = xbmc.translatePath('special://userdata/Database/MyVideos78.db')
@@ -605,14 +616,14 @@ def changePlaybackMode(file, cmd):
     copy = []
     faves = favourite.getFavourites(file)
     for fave in faves:
-        if favourite.equals(fave[2], cmd):
+        if favourite.equals(fave[3], cmd):
             if cmd.startswith('PlayMedia'):
                 try:    winID = re.compile('sf_win_id=(.+?)_').search(cmd).group(1)
                 except: winID = '10025'
                 cmd = cmd.replace('PlayMedia(', 'ActivateWindow(%s,' % winID)
             elif cmd.startswith('ActivateWindow'):
                 cmd = 'PlayMedia(' + cmd.split(',', 1)[-1]
-            fave[2] = cmd
+            fave[3] = cmd
         copy.append(fave)
 
     favourite.writeFavourites(file, copy)
@@ -801,7 +812,7 @@ def colourFave(file, cmd):
     copy = []
     faves = favourite.getFavourites(file)
     for fave in faves:
-        if favourite.equals(fave[2], cmd):
+        if favourite.equals(fave[3], cmd):
             fave[0]   = decolourize(fave[0])
             if colour != 'SF_RESET': 
                 fave[0] = '[COLOR %s]%s[/COLOR]' % (colour, fave[0])
@@ -1038,7 +1049,7 @@ def superSearch(keyword='', image=BLANK, fanart=BLANK, imdb=''):
     for fave in faves:
         label = fave[0]
         thumb = fave[1]
-        cmd   = fave[2].replace('[%SF%]', keyword)
+        cmd   = fave[3].replace('[%SF%]', keyword)
 
         menu = []
         menu.append((GETTEXT(30057), 'XBMC.Container.Update(%s?mode=%d&keyword=%s)' % (sys.argv[0], _EDITTERM, keyword)))
@@ -1213,7 +1224,10 @@ except: cmd = None
 try:
     path = urllib.unquote_plus(params['path'])
     path = xbmc.translatePath(path)
+    utils.setBackPath(path)
 except: path = None
+try:    id = urllib.unquote_plus(params['id'])
+except: id = ''
 
 try:    name = urllib.unquote_plus(params['name'])
 except: name = ''
@@ -1278,8 +1292,8 @@ elif mode == _FOLDER:
     theFolder = label
     addNewContent(thepath)
     '''addNewFolderItem(thepath)'''
-    data = parseContent(thepath)
-    parseFolder(thepath, data)
+    #data = parseContent(thepath)
+    parseFolder(thepath, [])
        
 elif mode == _REMOVEFOLDER:
     doRefresh = removeFolder(path)
@@ -1309,6 +1323,8 @@ elif mode == _NEWFOLDER:
     doRefresh = createNewFolder(path)
     
 elif mode == _ADDCONTENT:
+    Tagfile   = open(utils.TAGS_CONFIG,'w')
+    Tagfile.close()
     doRefresh = addContent(path)
 
 elif mode == _addonindex:
@@ -1324,14 +1340,14 @@ elif mode == _addoninstall:
         xbmcgui.Dialog().ok('TLBB Content', '%s is now updating' % name, 'This may take a few minutes', 'You will be notified when it becomes available')            
         xbmc.sleep(5000)
         xbmc.executebuiltin('UpdateAddonRepos')
-        thepath   = xbmc.translatePath(path)
+        thepath   = utils.getBackPath()
         label     = os.path.basename(thepath)
-        link      = "ReplaceWindow(10001,%s?label=%s&mode=%d&path=%s)" % (sys.argv[0], label, _FOLDER, urllib.quote_plus(thepath)) 
+        link      = "ReplaceWindow(10001,%s?label=%s&mode=%d&path=%s,return)" % (sys.argv[0], label, _FOLDER, urllib.quote_plus(thepath)) 
 
         xbmc.executebuiltin(link)
 
 elif mode == _ADDONLIST:
-    totalinstaller.ADDONLIST(url,type)
+    totalinstaller.ADDONLIST(url,type,name)
     
 elif mode == _LOCALCONTENT:
     local_content(path)
@@ -1344,10 +1360,14 @@ elif mode == _3RDPARTYSTREAM:
     streamingContent(path,mode)
     
 elif mode == _ADDONSETTINGS:
-    id = cmd.split(',',1)[1]
-    id = id.rsplit('/',1)[0]
-    id = id.split('//',1)[1]
-    xbmcaddon.Addon(id).openSettings()
+    try:
+        id = cmd.split(',',1)[1]
+        id = id.rsplit('/',1)[0]
+        id = id.split('//',1)[1]
+        xbmcaddon.Addon(id).openSettings()
+    except:
+        #addons settings error
+        xbmcaddon.Addon(ADDONID).openSettings()
     refresh()
 
 elif mode == _UP:
@@ -1487,7 +1507,7 @@ if mode == _SUPERSEARCHDEF:
     import search
     fave = search.getDefaultSearch()
     if fave:
-        cmd = fave[2]
+        cmd = fave[3]
         cmd = cmd.replace('[%SF%]', keyword)
         if cmd.startswith('RunScript'):
             #special fix for GlobalSearch, use local launcher (globalsearch.py) to bypass keyboard
