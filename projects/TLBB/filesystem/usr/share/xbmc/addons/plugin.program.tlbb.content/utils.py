@@ -36,6 +36,7 @@ GOTHAM          = (MAJOR == 13) or (MAJOR == 12 and MINOR == 9)
 FILENAME        = 'favourites.xml'
 FOLDERCFG       = 'folder.cfg'
 CONFIG_PATH     = os.path.join(xbmc.translatePath(ROOT), 'folder_path.cfg')
+TAGS_CONFIG     = os.path.join(xbmc.translatePath(ROOT), 'tags.cfg')
 InitialFilePath = os.path.join(xbmc.translatePath(ROOT), '.initialized')
 
 if not os.path.exists(InitialFilePath):
@@ -108,6 +109,31 @@ def setCurrentPath(path):
     config.write(f)
     f.close()
 
+def getBackPath():
+    config = ConfigParser.ConfigParser()
+
+    if not os.path.exists(CONFIG_PATH):
+        return None
+    else:
+       config.read(CONFIG_PATH)
+       return config.get('BackPath', 'path')
+
+
+def setBackPath(path):
+    config = ConfigParser.ConfigParser()
+
+    if os.path.exists(CONFIG_PATH):
+        f = open(CONFIG_PATH, 'r')
+        if config.has_section('BackPath'):
+            remove_section('BackPath')
+        f = open(CONFIG_PATH, 'a')
+    else:
+        f = open(CONFIG_PATH, 'w')
+
+    config.add_section('BackPath')
+    config.set('BackPath', 'path', path)
+    config.write(f)
+    f.close()
 
 def getUrl():
     config = ConfigParser.ConfigParser()
@@ -123,12 +149,12 @@ def setUrl(url):
     config = ConfigParser.ConfigParser()
 
     if os.path.exists(CONFIG_PATH):
+        f = open(CONFIG_PATH, 'r')
+        if config.has_section('URL'):
+            remove_section('URL')
         f = open(CONFIG_PATH, 'a')
     else:
         f = open(CONFIG_PATH, 'w')
-
-    if config.has_section('URL'):
-        remove_section('URL')
 
     config.add_section('URL')
     config.set('URL', 'url', url)
@@ -150,15 +176,53 @@ def setType(type):
     config = ConfigParser.ConfigParser()
 
     if os.path.exists(CONFIG_PATH):
+        f = open(CONFIG_PATH, 'r')
+        if config.has_section('addonType'):
+            remove_section('addonType')
         f = open(CONFIG_PATH, 'a')
     else:
         f = open(CONFIG_PATH, 'w')
 
-    if config.has_section('addonType'):
-        remove_section('addonType')
-
     config.add_section('addonType')
     config.set('addonType', 'type', type)
+    config.write(f)
+    f.close()
+    
+def getTag():
+    config = ConfigParser.ConfigParser()
+
+    if not os.path.exists(TAGS_CONFIG):
+        return None
+    else:
+        try:
+            f = open(TAGS_CONFIG, 'r')
+            config.read(TAGS_CONFIG)
+            preTag = config.get('Tag', 'tag')
+            f.close()
+        except:
+            preTag = ''
+        return preTag
+
+
+def setTag(tag):
+    config = ConfigParser.ConfigParser()    
+    preTag = getTag()
+    
+    f = open(TAGS_CONFIG, 'w')
+    
+    """if tag in ['Movies','Music','Family','Sports','Live TV','TV Shows']:
+        tags = tag"""
+    if preTag == '':
+        tags = tag
+    else:
+        if tag in preTag:
+            rmstrng = preTag.split(tag,1)[1]
+            tags    = preTag.strip(rmstrng)
+        else:
+            tags = preTag + ',' + tag
+    
+    config.add_section('Tag')    
+    config.set('Tag', 'tag', tags)
     config.write(f)
     f.close()
 
