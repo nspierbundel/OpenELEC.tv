@@ -122,7 +122,7 @@ def findFave(file, cmd):
     index = -1
     for fave in faves:
         index += 1
-        if fave[2] == cmd:            
+        if fave[3] == cmd:            
             return fave, index, len(faves)
 
     search = os.path.join(xbmc.translatePath(utils.ROOT), 'Search', utils.FILENAME).lower()
@@ -133,8 +133,8 @@ def findFave(file, cmd):
     index = -1
     for fave in faves:
         index += 1
-        if '[%SF%]' in fave[2]:
-            test = fave[2].split('[%SF%]', 1)
+        if '[%SF%]' in fave[3]:
+            test = fave[3].split('[%SF%]', 1)
             if cmd.startswith(test[0]) and cmd.endswith(test[1]):
                 return fave, index, len(faves)
 
@@ -167,7 +167,7 @@ def addFave(file, newFave):
 def moveFave(src, dst, fave):
     if not copyFave(dst, fave):
         return False
-    return removeFave(src, fave[2])
+    return removeFave(src, fave[3])
 
 
 def copyFave(file, copy):
@@ -187,7 +187,7 @@ def removeFave(file, cmd):
     copy = []
     faves = getFavourites(file)
     for fave in faves:
-        if not equals(fave[2], cmd):
+        if not equals(fave[3], cmd):
             copy.append(fave)
 
     if len(copy) == len(faves):
@@ -217,7 +217,7 @@ def renameFave(file, cmd, newName):
     copy = []
     faves = getFavourites(file)
     for fave in faves:
-        if equals(fave[2], cmd):
+        if equals(fave[3], cmd):
             fave[0] = newName
 
         copy.append(fave)
