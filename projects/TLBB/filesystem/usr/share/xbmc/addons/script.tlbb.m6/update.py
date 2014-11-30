@@ -109,6 +109,8 @@ def updateAvailable(latest):
         if int(latest[i]) > int(current[i]):
             utils.flagUpdate()
             return True
+        elif int(latest[i]) < int(current[i]):
+            return False
 
     return False
 
