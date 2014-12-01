@@ -2,7 +2,7 @@ import xbmc, xbmcgui
 import os
 import xbmcaddon
 
-cmd = os.path.join(xbmc.translatePath(xbmcaddon.Addon('script.tlbb.m6').getAddonInfo('path')), 'update.py')
+cmd = os.path.join(xbmc.translatePath(xbmcaddon.Addon('script.tlbb').getAddonInfo('path')), 'update.py')
 cmd += ',0'
 
 
