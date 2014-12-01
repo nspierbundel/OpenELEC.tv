@@ -20,7 +20,7 @@ index ee21474..4cff785 100644
  
  #ifndef BITS_PER_LONG
  #define BITS_PER_LONG        (sizeof(long) * 8)
-@@ -250,10 +251,18 @@ KeyMap keyMap[] = {
+@@ -250,10 +251,19 @@ KeyMap keyMap[] = {
    { KEY_PRINT         , XBMCK_PRINT       },
    { KEY_QUESTION      , XBMCK_HELP        },
    // The Little Black Box Remote Additions
@@ -40,6 +40,7 @@ index ee21474..4cff785 100644
 +  { 159               , XBMCK_MEDIA_PLAY_PAUSE},
 +  { 362               , XBMCK_SETTINGS	  },
 +  { 142		      , XBMCK_POWER       }, 
++  { 364               , XBMCK_FAVORITES   }, 
  };
  
  typedef enum

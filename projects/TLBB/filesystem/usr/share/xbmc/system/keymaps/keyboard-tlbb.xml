@@ -31,6 +31,7 @@
       <green>Close</green>						        <!-- Button 42 : GREEN -->
       <yellow>Close</yellow>					        <!-- Button 43 : YELLOW -->
       <blue>FullScreen</blue>					        <!-- Button 44 : BLUE -->
+      <favorites>ActivateWindow(Favourites)</favorites> <!-- Favorites button on IR remote -->
     </keyboard>
   </global>
   <LoginScreen>
@@ -41,7 +42,6 @@
   <Home>
     <keyboard name="The Little Black Box Remote">
       <help>ActivateWindow(1111)</help>
-      <settings>ActivateWindow(1115)</settings>
       <!--<f4>FullScreen</f4>-->
       <f1>Playlist</f1>
       <zero>Playlist</zero>

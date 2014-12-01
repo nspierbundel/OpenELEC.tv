@@ -14,7 +14,7 @@ diff --git a/xbmc/input/XBMC_keysym.h b/xbmc/input/XBMC_keysym.h
 index dd184d8..33f57e8 100644
 --- a/xbmc/input/XBMC_keysym.h
 +++ b/xbmc/input/XBMC_keysym.h
-@@ -230,6 +230,15 @@ typedef enum {
+@@ -230,6 +230,16 @@ typedef enum {
    XBMCK_SHUFFLE           = 342,
    XBMCK_FASTFORWARD       = 343,
  
@@ -26,6 +26,7 @@ index dd184d8..33f57e8 100644
 +  XBMCK_MOVIES            = 355,
 +  XBMCK_SERIES            = 356,
 +  XBMCK_SETTINGS          = 357,
++  XBMCK_FAVORITES         = 358,
 +
    XBMCK_LAST
  } XBMCKey;
@@ -34,7 +35,7 @@ diff --git a/xbmc/input/XBMC_keytable.cpp b/xbmc/input/XBMC_keytable.cpp
 index 4d07eb3..4d051ca 100644
 --- a/xbmc/input/XBMC_keytable.cpp
 +++ b/xbmc/input/XBMC_keytable.cpp
-@@ -226,6 +226,18 @@ static const XBMCKEYTABLE XBMCKeyTable[] =
+@@ -226,6 +226,19 @@ static const XBMCKEYTABLE XBMCKeyTable[] =
  , { XBMCK_PRINT,                  0,    0, XBMCVK_PRINTSCREEN,   "printscreen" }
  , { XBMCK_POWER,                  0,    0, XBMCVK_POWER,         "power" }
  , { XBMCK_SLEEP,                  0,    0, XBMCVK_SLEEP,         "sleep" }
@@ -50,6 +51,7 @@ index 4d07eb3..4d051ca 100644
 +, { XBMCK_HELP,                   0,    0, XBMCVK_HELP,          "help" }
 +, { XBMCK_FASTFORWARD,            0,    0, XBMCVK_FASTFORWARD,   "fastforward" }
 +, { XBMCK_SETTINGS,               0,    0, XBMCVK_SETTINGS,      "settings" }
++, { XBMCK_FAVORITES,              0,    0, XBMCVK_FAVORITES,     "favorites" }
  };
  
  static int XBMCKeyTableSize = sizeof(XBMCKeyTable)/sizeof(XBMCKEYTABLE);
@@ -57,7 +59,7 @@ diff --git a/xbmc/input/XBMC_vkeys.h b/xbmc/input/XBMC_vkeys.h
 index 00437db..e6b616f 100644
 --- a/xbmc/input/XBMC_vkeys.h
 +++ b/xbmc/input/XBMC_vkeys.h
-@@ -209,6 +209,18 @@ typedef enum {
+@@ -209,6 +209,19 @@ typedef enum {
    XBMCVK_POWER          = 0XDE,
    XBMCVK_SLEEP          = 0XDF,
  
@@ -72,6 +74,7 @@ index 00437db..e6b616f 100644
 +  XBMCVK_SERIES         = 0XE8,
 +  XBMCVK_FASTFORWARD    = 0XE9,
 +  XBMCVK_SETTINGS       = 0XEA,
++  XBMCVK_FAVORITES      = 0XEB,
 +
    XBMCVK_LAST           = 0xFF
  } XBMCVKey;
