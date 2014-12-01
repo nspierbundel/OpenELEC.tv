@@ -1,1 +1,5 @@
+v1.2.1
+Updated for new style content delivery methods including OpenELEC
+
 v1.0.0
+Intial release
