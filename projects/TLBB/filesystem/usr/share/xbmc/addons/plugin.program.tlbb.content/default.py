@@ -507,7 +507,7 @@ def addContent(path):
 
     #elif option1 == 1:
         #Online Content
-    option2 = xbmcgui.Dialog().select('Streaming Content', ['Official Content','3rd Party Content'], autoclose = 0)
+    option2 = xbmcgui.Dialog().select('Streaming Content', ['Official Content','3rd Party Content','Easy Setup'], autoclose = 0)
     if option2 == 0:
         #Official content
         xbmc.executebuiltin( "ActivateWindow(busydialog)" )
@@ -522,6 +522,16 @@ def addContent(path):
         elif choice == 1:
             xbmc.executebuiltin( "ActivateWindow(busydialog)" )
             xbmc.executebuiltin("ActivateWindow(10025,%s?mode=%d&path=%s,return)"% (sys.argv[0], _3RDPARTYSTREAM,  urllib.quote_plus(path)))
+
+    elif option2 == 2:
+        # Easy Setup
+        TITLE = 'Easy Setup'
+        choice = xbmcgui.Dialog().yesno(TITLE, 'Make it easy to set up your TLBB', 'WARNING - Installing any of these options will erase ', 'any existing content. Are you happy with that?')
+        if choice == 0:
+            return
+        elif choice == 1:
+            xbmc.executebuiltin('XBMC.RunAddon(plugin.video.tlbbocs)')        
+        
     
 def streamingContent(path,formal_mode):
     BASE_URL = 'http://portal.thelittleblackbox.com/'
