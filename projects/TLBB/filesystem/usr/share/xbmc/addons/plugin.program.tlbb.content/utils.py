@@ -74,12 +74,12 @@ if not os.path.exists(InitialFilePath):
         f    = open(file,'w')
 
         f.write("<favourites>\n")
+        f.write("<favourite name='One Click Setup' thumb='special://home/addons/plugin.video.tlbbocs/icon.png'>ActivateWindow(10025,plugin://plugin.video.tlbbocs/)</favourite>\n")
         f.write("<favourite name='TLBB Installer' thumb='special://home/addons/plugin.video.tlbbinstaller/icon.png'>ActivateWindow(10025,plugin://plugin.video.tlbbinstaller/)</favourite>\n")
         f.write("<favourite name='TLBB Backup' thumb='special://home/addons/plugin.program.tlbbbackup/icon.png'>ActivateWindow(10025,plugin://plugin.program.tlbbbackup/)</favourite>\n")
         f.write("<favourite name='TLBB Updater' thumb='special://home/addons/script.tlbb.m6/icon.png'>RunScript(special://home/addons/skin.tlbb/extras/scripts/update.py)</favourite>\n")
         f.write("<favourite name='VPNicity' thumb='special://home/addons/plugin.program.vpnicity/icon.png'>ActivateWindow(10025,plugin://plugin.program.vpnicity/)</favourite>\n")
         f.write("<favourite name='OpenVPN' thumb='special://home/addons/script.openvpn/icon.png'>RunScript(script.openvpn)</favourite>\n")
-        #f.write("<favourite name='Regional Installer' thumb='special://home/addons/plugin.video.tlbbwizard/icon.png'>ActivateWindow(10025,plugin://plugin.video.tlbbwizard/)</favourite>\n")
         f.write("<favourite name='Network Manager' thumb='special://home/addons/script.linux.nm/icon.png'>RunScript(script.linux.nm)</favourite>\n")
         f.write("</favourites>")
         f.close()
