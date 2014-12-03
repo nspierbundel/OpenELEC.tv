@@ -6,7 +6,7 @@ Conflicts=shutdown.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/sh -c "if [ ! -d /storage/.xbmc/addons/skin.tlbb -o /usr/share/xbmc/addons/skin.tlbb -nt /storage/.xbmc/addons/skin.tlbb ]; then cp -PR /usr/share/xbmc/addons/skin.tlbb /storage/.xbmc/addons/ &>/dev/null; fi"
+ExecStart=/bin/sh -c "if [ ! -d /storage/.xbmc/addons/skin.tlbb -o /usr/share/xbmc/addons/skin.tlbb -nt /storage/.xbmc/addons/skin.tlbb ]; then mkdir -p /storage/.xbmc/addons; cp -PR /usr/share/xbmc/addons/skin.tlbb /storage/.xbmc/addons/ &>/dev/null; fi"
 RemainAfterExit=yes
 
 [Install]
