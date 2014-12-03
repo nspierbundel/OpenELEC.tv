@@ -70,4 +70,8 @@ post_install() {
   add_group sshd 74
 
   enable_service sshd.service
+  enable_service ssh-defaults.service
+
+  mkdir -p $INSTALL/usr/share/services
+    cp -P $PKG_DIR/default.d/*.conf $INSTALL/usr/share/services
 }
