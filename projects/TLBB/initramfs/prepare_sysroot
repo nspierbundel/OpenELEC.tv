@@ -20,3 +20,6 @@
 
 # Mount the directory that will be used by the recovery to look for updates
 mount /dev/cache /sysroot/recovery
+
+# Disable the OE update service
+echo "" > /dev/.update_disabled
