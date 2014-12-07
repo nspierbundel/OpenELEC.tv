@@ -24,15 +24,6 @@ import xbmcgui
 import utils
 import update
 
-try:
-    if utils.getSetting('MESSAGESHOWN') == 'false':
-        d = xbmcgui.Dialog()
-        d.ok('IMPORTANT MESSAGE', 'Due to major improvements in the latest firmware the forum has been relocated.', 'Please visit www.thelittleblackbox.com for more info.', 'Thankyou.')
-        
-        utils.setSetting('MESSAGESHOWN', 'true')
-except:
-    pass
-
 utils.log("Update Service Starting")
 
 
