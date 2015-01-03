@@ -25,13 +25,9 @@
 
 # set variables
   OE_TMP=$(mktemp -d)
-  LOOP=$(losetup -f)
+  LOOP=$(/sbin/losetup -f)
 
-  if [ "$BOOTLOADER" = "bcm2835-bootloader" ]; then
-    SYSTEM_SIZE=128
-  else
-    SYSTEM_SIZE=256
-  fi
+  SYSTEM_SIZE=256
   STORAGE_SIZE=32 # STORAGE_SIZE must be >= 32 !
 
   DISK_SIZE=$(( $SYSTEM_SIZE + $STORAGE_SIZE + 4 ))
@@ -41,7 +37,7 @@
   cleanup() {
     echo "image: cleanup..."
     umount "$OE_TMP" &>/dev/null || :
-    losetup -d "$LOOP"
+    /sbin/losetup -d "$LOOP"
     [ -f "$OE_TMP/ldlinux.sys" ] && chattr -i "$OE_TMP/ldlinux.sys" || :
     rm -rf "$OE_TMP"
     exit
@@ -61,7 +57,7 @@ fi
 # ensure loopX not in use
   umount "$OE_TMP" &>/dev/null || :
   umount "$LOOP" &>/dev/null >/dev/null || :
-  losetup -d "$LOOP" &>/dev/null >/dev/null || :
+  /sbin/losetup -d "$LOOP" &>/dev/null >/dev/null || :
 
 # create an image
   echo "image: creating image: $DISK..."
@@ -70,7 +66,7 @@ fi
 
 # write a disklabel
   echo "image: creating partition table on $DISK..."
-  losetup "$LOOP" "$DISK"
+  /sbin/losetup "$LOOP" "$DISK"
   if [ "$UEFI" = "yes" ] ; then
     parted -s "$LOOP" mklabel gpt
   else
@@ -87,7 +83,7 @@ fi
     else
       parted -s "$LOOP" -a min unit s mkpart primary ext4 2048 $SYSTEM_PART_END
     fi
-  elif [ "$BOOTLOADER" = "bcm2835-bootloader" -o "$BOOTLOADER" = "u-boot" ]; then
+  elif [ "$BOOTLOADER" = "bcm2835-bootloader" -o "$BOOTLOADER" = "u-boot" -o -z "$BOOTLOADER" ]; then
     parted -s "$LOOP" -a min unit s mkpart primary fat32 2048 $SYSTEM_PART_END
   fi
   if [ "$UEFI" = "yes" ] ; then
@@ -118,21 +114,21 @@ if [ "$BOOTLOADER" = "syslinux" ]; then
 fi
 
 # create filesystem on part1
-  losetup -d "$LOOP"
+  /sbin/losetup -d "$LOOP"
   echo "image: creating filesystem on part1..."
   OFFSET=$(( 2048 * 512 ))
   SIZELIMIT=$(( $SYSTEM_SIZE * 1024 * 1024 ))
-  losetup -o $OFFSET --sizelimit $SIZELIMIT "$LOOP" "$DISK"
+  /sbin/losetup -o $OFFSET --sizelimit $SIZELIMIT "$LOOP" "$DISK"
   if [ "$BOOTLOADER" = "syslinux" ]; then
     if [ "$UEFI" = "yes" ] ; then
-      mkfs.vfat -i "$FAT_VOL_ID" "$LOOP"
+      /sbin/mkfs.vfat -i "$FAT_VOL_ID" "$LOOP"
     else
-      mke2fs -q -t ext4 -m 0 "$LOOP"
-      tune2fs -U $UUID_SYSTEM "$LOOP"
-      e2fsck -n "$LOOP"
+      /sbin/mke2fs -q -t ext4 -m 0 "$LOOP"
+      /sbin/tune2fs -U $UUID_SYSTEM "$LOOP"
+      /sbin/e2fsck -n "$LOOP"
     fi
-  elif [ "$BOOTLOADER" = "bcm2835-bootloader" -o "$BOOTLOADER" = "u-boot" ]; then
-    mkfs.vfat "$LOOP"
+  elif [ "$BOOTLOADER" = "bcm2835-bootloader" -o "$BOOTLOADER" = "u-boot" -o -z "$BOOTLOADER" ]; then
+    /sbin/mkfs.vfat "$LOOP"
   fi
   sync
 
@@ -237,9 +233,9 @@ elif [ "$BOOTLOADER" = "u-boot" ]; then
     fi
 
     echo "image: installing u-boot bootloader..."
-    if [ "$RELEASE_DIR/3rdparty/bootloader/SPL" ]; then
+    if [ -f "$RELEASE_DIR/3rdparty/bootloader/SPL" ]; then
       dd if="$RELEASE_DIR/3rdparty/bootloader/SPL" of="$DISK" bs=512 seek=2 conv=notrunc
-    elif [ "$RELEASE_DIR/3rdparty/bootloader/u-boot.imx" ]; then
+    elif [ -f "$RELEASE_DIR/3rdparty/bootloader/u-boot.imx" ]; then
       dd if="$RELEASE_DIR/3rdparty/bootloader/u-boot.imx" of="$DISK" bs=512 seek=2 conv=notrunc
     fi
 
@@ -251,6 +247,10 @@ elif [ "$BOOTLOADER" = "u-boot" ]; then
     for dtb in $(ls $RELEASE_DIR/3rdparty/bootloader/*.dtb) ; do
       cp "$dtb" "$OE_TMP"
     done
+elif [ -z "$BOOTLOADER" ]; then
+    echo "image: copying files to part1..."
+    cp $TARGET_IMG/$IMAGE_NAME.kernel "$OE_TMP/kernel.img"
+    cp $TARGET_IMG/$IMAGE_NAME.system "$OE_TMP/SYSTEM"
 fi # bootloader
 
 # unmount part1
@@ -259,14 +259,14 @@ fi # bootloader
   umount "$LOOP"
 
 # create filesystem on part2
-  losetup -d "$LOOP"
+  /sbin/losetup -d "$LOOP"
   echo "image: creating filesystem on part2..."
   OFFSET=$(( $STORAGE_PART_START * 512 ))
   SIZELIMIT=$(( $STORAGE_SIZE * 1024 * 1024 ))
-  losetup -o $OFFSET --sizelimit $SIZELIMIT "$LOOP" "$DISK"
-  mke2fs -q -t ext4 -m 0 "$LOOP"
-  tune2fs -U $UUID_STORAGE "$LOOP"
-  e2fsck -n "$LOOP"
+  /sbin/losetup -o $OFFSET --sizelimit $SIZELIMIT "$LOOP" "$DISK"
+  /sbin/mke2fs -q -t ext4 -m 0 "$LOOP"
+  /sbin/tune2fs -U $UUID_STORAGE "$LOOP"
+  /sbin/e2fsck -n "$LOOP"
   sync
 
 # mount part2

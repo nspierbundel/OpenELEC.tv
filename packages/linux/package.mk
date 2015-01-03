@@ -19,16 +19,15 @@
 PKG_NAME="linux"
 case "$LINUX" in
   amlogic)
-    LINUX_VERSION="3.10.35"
-    PKG_VERSION="amlogic-$LINUX_VERSION"
-    PKG_URL="https://github.com/codesnake/linux-amlogic/releases/download/$LINUX_VERSION/$PKG_NAME-$PKG_VERSION.tar.xz"
+    PKG_VERSION="amlogic-3.10-24e850b"
+    PKG_URL="$DISTRO_SRC/$PKG_NAME-$PKG_VERSION.tar.xz"
     ;;
   imx6)
     PKG_VERSION="cuboxi-3.14-dc5edb8"
     PKG_URL="$DISTRO_SRC/$PKG_NAME-$PKG_VERSION.tar.xz"
     ;;
   *)
-    PKG_VERSION="3.17.3"
+    PKG_VERSION="3.17.7"
     PKG_URL="http://www.kernel.org/pub/linux/kernel/v3.x/$PKG_NAME-$PKG_VERSION.tar.xz"
     ;;
 esac
@@ -37,7 +36,7 @@ PKG_ARCH="any"
 PKG_LICENSE="GPL"
 PKG_SITE="http://www.kernel.org"
 PKG_DEPENDS_HOST="ccache:host"
-PKG_DEPENDS_TARGET="toolchain cpio:host kmod:host pciutils xz:host wireless-regdb"
+PKG_DEPENDS_TARGET="toolchain cpio:host kmod:host pciutils xz:host wireless-regdb keyutils"
 PKG_DEPENDS_INIT="toolchain"
 PKG_NEED_UNPACK="$LINUX_DEPENDS"
 PKG_PRIORITY="optional"
@@ -150,7 +149,7 @@ make_target() {
     $SCRIPTS/install initramfs
   )
 
-  if [ -n "$KERNEL_UBOOT_EXTRA_TARGET" ]; then
+  if [ "$BOOTLOADER" = "u-boot" -a -n "$KERNEL_UBOOT_EXTRA_TARGET" ]; then
     for extra_target in "$KERNEL_UBOOT_EXTRA_TARGET"; do
       LDFLAGS="" make $extra_target
     done
@@ -196,7 +195,7 @@ makeinstall_target() {
   if [ "$BOOTLOADER" = "u-boot" -a -f "arch/arm/boot/dts/*.dtb" ]; then
     mkdir -p $INSTALL/usr/share/bootloader
     for dtb in arch/arm/boot/dts/*.dtb; do
-      cp $dtb $INSTALL/usr/share/bootloader
+      cp $dtb $INSTALL/usr/share/bootloader 2>/dev/null || :
     done
   fi
 
