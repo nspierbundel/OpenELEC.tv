@@ -1,7 +1,7 @@
-From eacc797144aa71942b5542819c9924901c765fcf Mon Sep 17 00:00:00 2001
+From 2e9b3a3a6e7b2055479e110c5cbec0d696af8240 Mon Sep 17 00:00:00 2001
 From: Alex Deryskyba <alex@codesnake.com>
 Date: Sun, 21 Sep 2014 17:20:25 +0300
-Subject: [PATCH 12/15] Fix incorrect frame rate detection of some videos with
+Subject: [PATCH 12/16] Fix incorrect frame rate detection of some videos with
  variable frame rate.
 
 Use FFMPEG's r_frame_rate, if it as valid, as a video stream frame rate, otherwise use avg_frame_rate.
@@ -15,10 +15,10 @@ they are not needed anymore.
  4 files changed, 10 insertions(+), 33 deletions(-)
 
 diff --git a/xbmc/cores/dvdplayer/DVDDemuxers/DVDDemux.h b/xbmc/cores/dvdplayer/DVDDemuxers/DVDDemux.h
-index 6b3e901..9d754c7 100644
+index 40c16c0..98c3513 100644
 --- a/xbmc/cores/dvdplayer/DVDDemuxers/DVDDemux.h
 +++ b/xbmc/cores/dvdplayer/DVDDemuxers/DVDDemux.h
-@@ -145,8 +145,6 @@ public:
+@@ -148,8 +148,6 @@ public:
    {
      iFpsScale = 0;
      iFpsRate = 0;
@@ -27,7 +27,7 @@ index 6b3e901..9d754c7 100644
      iHeight = 0;
      iWidth = 0;
      fAspect = 0.0;
-@@ -161,8 +159,6 @@ public:
+@@ -164,8 +162,6 @@ public:
    virtual ~CDemuxStreamVideo() {}
    int iFpsScale; // scale of 1000 and a rate of 29970 will result in 29.97 fps
    int iFpsRate;
@@ -37,10 +37,10 @@ index 6b3e901..9d754c7 100644
    int iWidth; // width of the stream reported by the demuxer
    float fAspect; // display aspect of stream
 diff --git a/xbmc/cores/dvdplayer/DVDDemuxers/DVDDemuxFFmpeg.cpp b/xbmc/cores/dvdplayer/DVDDemuxers/DVDDemuxFFmpeg.cpp
-index fd4b647..5828689 100644
+index 300bff7..9a2db60 100644
 --- a/xbmc/cores/dvdplayer/DVDDemuxers/DVDDemuxFFmpeg.cpp
 +++ b/xbmc/cores/dvdplayer/DVDDemuxers/DVDDemuxFFmpeg.cpp
-@@ -1108,34 +1108,25 @@ CDemuxStream* CDVDDemuxFFmpeg::AddStream(int iId)
+@@ -1117,34 +1117,25 @@ CDemuxStream* CDVDDemuxFFmpeg::AddStream(int iId)
  #else
          AVRational r_frame_rate = pStream->r_frame_rate;
  #endif
@@ -86,10 +86,10 @@ index fd4b647..5828689 100644
  
          if (pStream->codec_info_nb_frames >  0
 diff --git a/xbmc/cores/dvdplayer/DVDStreamInfo.cpp b/xbmc/cores/dvdplayer/DVDStreamInfo.cpp
-index e1dd87f..77a8013 100644
+index c1dbd85..03facbe 100644
 --- a/xbmc/cores/dvdplayer/DVDStreamInfo.cpp
 +++ b/xbmc/cores/dvdplayer/DVDStreamInfo.cpp
-@@ -50,8 +50,6 @@ void CDVDStreamInfo::Clear()
+@@ -52,8 +52,6 @@ void CDVDStreamInfo::Clear()
  
    fpsscale = 0;
    fpsrate  = 0;
@@ -98,7 +98,7 @@ index e1dd87f..77a8013 100644
    height   = 0;
    width    = 0;
    aspect   = 0.0;
-@@ -93,8 +91,6 @@ bool CDVDStreamInfo::Equal(const CDVDStreamInfo& right, bool withextradata)
+@@ -97,8 +95,6 @@ bool CDVDStreamInfo::Equal(const CDVDStreamInfo& right, bool withextradata)
    // VIDEO
    if( fpsscale != right.fpsscale
    ||  fpsrate  != right.fpsrate
@@ -107,7 +107,7 @@ index e1dd87f..77a8013 100644
    ||  height   != right.height
    ||  width    != right.width
    ||  stills   != right.stills
-@@ -151,8 +147,6 @@ void CDVDStreamInfo::Assign(const CDVDStreamInfo& right, bool withextradata)
+@@ -159,8 +155,6 @@ void CDVDStreamInfo::Assign(const CDVDStreamInfo& right, bool withextradata)
    // VIDEO
    fpsscale = right.fpsscale;
    fpsrate  = right.fpsrate;
@@ -116,7 +116,7 @@ index e1dd87f..77a8013 100644
    height   = right.height;
    width    = right.width;
    aspect   = right.aspect;
-@@ -209,8 +203,6 @@ void CDVDStreamInfo::Assign(const CDemuxStream& right, bool withextradata)
+@@ -220,8 +214,6 @@ void CDVDStreamInfo::Assign(const CDemuxStream& right, bool withextradata)
      const CDemuxStreamVideo *stream = static_cast<const CDemuxStreamVideo*>(&right);
      fpsscale  = stream->iFpsScale;
      fpsrate   = stream->iFpsRate;
@@ -126,10 +126,10 @@ index e1dd87f..77a8013 100644
      width     = stream->iWidth;
      aspect    = stream->fAspect;
 diff --git a/xbmc/cores/dvdplayer/DVDStreamInfo.h b/xbmc/cores/dvdplayer/DVDStreamInfo.h
-index 8aa9b95..744ad59 100644
+index de66625..d775d78 100644
 --- a/xbmc/cores/dvdplayer/DVDStreamInfo.h
 +++ b/xbmc/cores/dvdplayer/DVDStreamInfo.h
-@@ -53,8 +53,6 @@ public:
+@@ -58,8 +58,6 @@ public:
    // VIDEO
    int fpsscale; // scale of 1000 and a rate of 29970 will result in 29.97 fps
    int fpsrate;
