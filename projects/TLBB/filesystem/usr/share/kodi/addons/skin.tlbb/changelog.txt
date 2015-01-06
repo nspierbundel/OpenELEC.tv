@@ -1,3 +1,20 @@
+[B][COLOR=FF56ADDA]v4.0.1 - Release Date 6/1/2015[/COLOR][/B]
+• Added new QuickNav Custom Items selection dialog.
+• Fixed missing labels in Skin Settings.
+• Fixed misaligned labels in default Weather view.
+• Added missing localized strings.
+• More work on unifying skin code (WIP).
+• Remove unused textures and code.
+• Several small fixes.
+
+[B][COLOR=FF56ADDA]v4.0.0 - Release Date 30/12/2014[/COLOR][/B]
+• Updated code for Kodi v14.0 Helix (including PVR section).
+• Added skin option for small thumbs in Thumbnails views.
+• Added new Progress, OK, Yes/No dialogs.
+• Added new textures in all dialogs.
+• Reworked and unified skin code in all dialogs and some views for speed improvement due Helix changes(WIP).
+• Updated language files from Transifex.
+
 [B][COLOR=FF56ADDA]v3.2.1 - Release Date 5/12/2014[/COLOR][/B]
 • Added support for OpenWeatherMap Extended addon.
 • Added support for hearing impaired subtitles.

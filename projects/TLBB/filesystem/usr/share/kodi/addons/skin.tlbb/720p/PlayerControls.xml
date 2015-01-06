@@ -34,7 +34,7 @@
 			    <align>center</align>
 			    <aligny>center</aligny>
 					<scroll>false</scroll>
-					<label>$LOCALIZE[31370]</label>
+					<label>$LOCALIZE[31374]</label>
 				</control>
 				<control type="image">
 			    <description>background image</description>
@@ -100,9 +100,9 @@
 						  <bordersize>6</bordersize>
 						</control>
 						<control type="label">
-							<left>118</left>
+							<left>-30</left>
 							<top>168</top>
-							<width>275</width>
+							<width>295</width>
 							<height>35</height>
 							<textcolor>blue</textcolor>
 							<shadowcolor>99000000</shadowcolor>
@@ -111,14 +111,6 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
-	            <animation type="Focus">
-	              <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
-	              <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
-	            </animation>
-	            <animation type="Unfocus">
-	              <effect type="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="auto" />
-	              <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
-	            </animation>
 						</control>
 						<control type="image">
 							<left>30</left>
@@ -127,22 +119,16 @@
 							<height>165</height>
 							<aspectratio align="center" aligny="center">stretch</aspectratio>
 							<texture background="true">osd/quicknav/focus_square.png</texture>
-	            <animation type="Focus">
-	              <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
-	              <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
-	            </animation>
-	            <animation type="Unfocus">
-	              <effect type="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="auto" />
-	              <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
-	            </animation>
+	            <include>ThumbnailsFocusAnimation</include>
 						</control>
 					</focusedlayout>
 		      <content>
 		        <include>QuickNavContent</include>
+		        <include>CustomItems</include>
 		      </content>
 				</control>
 				<control type="image">
-					<left>629</left>
+					<left>628</left>
 					<top>482</top>
 					<width>25</width>
 					<height>22</height>
@@ -278,7 +264,7 @@
 		      <content>plugin://service.library.data.provider?type=recentmovies&amp;reload=$INFO[Window(Home).Property(recentmovies)]</content>
 				</control>
 				<control type="image">
-					<left>629</left>
+					<left>628</left>
 					<top>498</top>
 					<width>25</width>
 					<height>22</height>
@@ -414,7 +400,7 @@
 		      <content>plugin://service.library.data.provider?type=recentepisodes&amp;reload=$INFO[Window(Home).Property(recentepisodes)]</content>
 				</control>
 				<control type="image">
-					<left>629</left>
+					<left>628</left>
 					<top>498</top>
 					<width>25</width>
 					<height>22</height>
@@ -572,7 +558,7 @@
 		      <content>plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window(Home).Property(recentalbums)]</content>
 				</control>
 				<control type="image">
-					<left>629</left>
+					<left>628</left>
 					<top>482</top>
 					<width>25</width>
 					<height>22</height>
