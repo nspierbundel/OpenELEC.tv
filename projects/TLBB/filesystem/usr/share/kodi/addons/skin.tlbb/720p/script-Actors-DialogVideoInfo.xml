@@ -22,7 +22,8 @@
 		</control>
 
 		<control type="group">
-			<visible>![Window.IsActive(busydialog) | Window.IsActive(progressdialog) | Window.IsActive(okdialog) | Window.IsActive(yesnodialog) | Window.IsActive(FileBrowser) | Window.IsActive(SelectDialog) | Window.IsActive(DialogSelect.xml)]</visible>
+			<!-- <visible>!Window.IsActive(BusyDialog)</visible> -->
+			<visible>![Window.IsActive(progressdialog) | Window.IsActive(okdialog) | Window.IsActive(yesnodialog) | Window.IsActive(FileBrowser) | Window.IsActive(SelectDialog) | Window.IsActive(DialogSelect.xml)]</visible>
 	    <include>OpenCloseSlideAnimation</include>
 	    <include>VisibleHiddenSlideAnimation</include>
 
@@ -214,6 +215,7 @@
 							<font>FontSize_22</font>
 							<width min="10" max="780">auto</width>
 							<height>30</height>
+              <haspath>true</haspath>
 							<label fallback="195">$INFO[ListItem.FilenameAndPath]</label>
 						</control>
 					</control>
