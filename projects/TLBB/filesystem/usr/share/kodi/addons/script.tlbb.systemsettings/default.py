@@ -618,7 +618,7 @@ def refresh():
     refreshSkinString('subtitles.languages')
     refreshSkinString('subtitles.charset')
 
-    firmware = xbmcaddon.Addon('script.tlbb.m6').getSetting('cVersion').replace('\r', '').replace('\n', '')
+    firmware = xbmcaddon.Addon('script.tlbb').getSetting('cVersion').replace('\r', '').replace('\n', '')
     xbmc.executebuiltin('Skin.SetString(%s,%s)' % ('firmware', firmware))
 
     setting = 'lookandfeel.skin'
