@@ -13,7 +13,28 @@ VERSION = "1.0.1"
 PATH = "TLBB Wizard"            
     
 def CATEGORIES():
-    link = OPEN_URL('http://cloud.thelittleblackbox.co.uk/community_builds.txt').replace('\n','').replace('\r','')
+    username = ADDON.getSetting('username')
+    password = ADDON.getSetting('password')
+    xbmc_version=xbmc.getInfoLabel("System.BuildVersion")
+    version=float(xbmc_version[:4])
+    if version < 14:
+        xbmcversion = '0'
+    else:
+        xbmcversion = '1'
+
+    if ADDON.getSetting('adult') == 'true':
+        adult = 1
+    else:
+        adult = 0
+    
+    if ADDON.getSetting('login') == 'true':
+        buildsURL = 'http://cloud.thelittleblackbox.co.uk/community_builds.txt?u=%s&p=%s&kodi=%s&adult=%s' % (username, password, xbmcversion, adult)
+    else:
+        buildsURL = 'http://cloud.thelittleblackbox.co.uk/community_builds.txt?u=none&p=none&kodi=%s&adult=%s' % (xbmcversion, adult)
+    link = OPEN_URL(buildsURL).replace('\n','').replace('\r','')
+    print "Generated URL : " + str(buildsURL)
+    print "Kodi : " + str(xbmcversion)
+    print "Adult : " + str(adult)
     match = re.compile('name="(.+?)".+?rl="(.+?)".+?mg="(.+?)".+?anart="(.+?)".+?escription="(.+?)"').findall(link)
     for name,url,iconimage,fanart,description in match:
         addDir(name,url,1,iconimage,fanart,description)
@@ -38,6 +59,8 @@ def wizard(name,url,description):
             return
         elif choice == 1:
             import downloader
+            incremental = 'http://cloud.thelittleblackbox.co.uk/cloud/incrementcount.php?linkx=%s' % (url)
+            OPEN_URL(incremental)
             dest = '/storage/.restore/'
             path = os.path.join(dest, '20141128094249.tar')
 
