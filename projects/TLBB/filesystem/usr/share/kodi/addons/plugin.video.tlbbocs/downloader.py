@@ -47,8 +47,8 @@ def _pbhook(numblocks, blocksize, filesize, dp, start_time):
             dp.update(percent, mbs, e)
             if percent == 100:
                 d = xbmcgui.Dialog()
-                d.ok('Community Builds', 'Download complete', 'Your TLBB wil now reboot')
-                xbmc.executebuiltin('Reboot')
+                d.ok('Community Builds', 'Download complete', 'Your TLBB will now reboot')
+#                xbmc.executebuiltin('Reboot')
         except: 
             percent = 100 
             dp.update(percent) 
