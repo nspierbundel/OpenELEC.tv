@@ -177,6 +177,12 @@ IMAGE_NAME="$DISTRONAME-$TARGET_VERSION"
 # copy project related files to filesystem
   if [ -d "$PROJECT_DIR/$PROJECT/filesystem" ]; then
     cp -PR $PROJECT_DIR/$PROJECT/filesystem/* $INSTALL
+    # install project specific systemd services
+    for service in $PROJECT_DIR/$PROJECT/filesystem/usr/lib/systemd/system/*.service ; do
+      if [ -f "$service" ] ; then
+        enable_service $(basename $service)
+      fi
+    done
   fi
 
 # copy board related files to filesystem
@@ -297,20 +303,25 @@ IMAGE_NAME="$DISTRONAME-$TARGET_VERSION"
       tar cf $TARGET_IMG/$IMAGE_NAME.tar -C target $IMAGE_NAME
 
     # create image files if requested
-      if [ "$1" = "mkimage" ]; then
+      if [ "$1" = "mkimage" -a -n "$BOOTLOADER" ]; then
         if [ "$2" == "efi" ] ; then
           UEFI=yes
+        fi
+        # projects can set KERNEL_NAME (kernel.img)
+        if [ -z "$KERNEL_NAME" ] ; then
+          KERNEL_NAME="KERNEL"
         fi
         echo "mkimage: boo. now root access (sudo) is required..."
         echo "mkimage: see scripts/image and scripts/mkimage if you dont trust us :)"
         # variables used in image script must be passed
         sudo env \
-          PATH="$PATH" \
+          PATH="$PATH:/sbin" \
           ROOT="$ROOT" \
           TOOLCHAIN="$TOOLCHAIN" \
           TARGET_IMG="$TARGET_IMG" \
           IMAGE_NAME="$IMAGE_NAME" \
           BOOTLOADER="$BOOTLOADER" \
+          KERNEL_NAME="$KERNEL_NAME" \
           RELEASE_DIR="$RELEASE_DIR" \
           UUID_SYSTEM="$(uuidgen)" \
           UUID_STORAGE="$(uuidgen)" \
@@ -395,6 +406,9 @@ IMAGE_NAME="$DISTRONAME-$TARGET_VERSION"
           -e "s%@DESCRIPTION@%$DESCRIPTION%g" \
           -i $RELEASE_DIR/os.json
 
+      sed -e "s%@DISTRONAME@%$DISTRONAME%g" \
+          -i $RELEASE_DIR/partitions.json
+
     # create System dir
       mkdir -p $RELEASE_DIR/System
 
@@ -428,12 +442,12 @@ IMAGE_NAME="$DISTRONAME-$TARGET_VERSION"
       mkdir -p $RELEASE_DIR/Storage
 
     # remove an previous created release tarball
-      rm -rf $RELEASE_DIR/System.tar.xz
-      rm -rf $RELEASE_DIR/Storage.tar.xz
+      rm -rf $RELEASE_DIR/${DISTRONAME}System.tar.xz
+      rm -rf $RELEASE_DIR/${DISTRONAME}Storage.tar.xz
 
     # create filesystem tarballs
-      tar cJf $RELEASE_DIR/System.tar.xz -C $RELEASE_DIR/System/ .
-      tar cJf $RELEASE_DIR/Storage.tar.xz -C $RELEASE_DIR/Storage/ .
+      tar cJf $RELEASE_DIR/${DISTRONAME}System.tar.xz -C $RELEASE_DIR/System/ .
+      tar cJf $RELEASE_DIR/${DISTRONAME}Storage.tar.xz -C $RELEASE_DIR/Storage/ .
 
     # remove an filesystem dirs
       rm -rf $RELEASE_DIR/System
