@@ -1,3 +1,6 @@
+assert(getprop("ro.build.product") == "tlbbm6" ||
+       getprop("ro.product.device") == "tlbbm6");
+
 show_progress(0.500000, 3);
 set_bootloader_env("upgrade_step", "3");
 
