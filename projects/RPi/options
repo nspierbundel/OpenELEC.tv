@@ -53,12 +53,14 @@
     KERNEL_UBOOT_EXTRA_TARGET=""
 
   # Additional kernel make parameters (for example to specify the u-boot loadaddress)
-    KERNEL_MAKE_EXTRACMD=""
+    KERNEL_MAKE_EXTRACMD="dtbs"
 
   # Kernel to use. values can be:
   # default:  default mainline kernel
     LINUX="default"
 
+  # NOOBS supported hex versions
+    NOOBS_HEX="2,3,4,5,6,7,8,9,d,e,f,10,11,12,14,19"
 
 ################################################################################
 # setup build defaults

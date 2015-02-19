@@ -110,9 +110,6 @@
 # build with libnfs support (mounting nfs shares with KODI) (yes / no)
   KODI_NFS_SUPPORT="yes"
 
-# build with afpfs-ng support (mounting AFP shares with KODI) (yes / no)
-  KODI_AFP_SUPPORT="no"
-
 # build with Samba Client support (mounting SAMBA shares with KODI) (yes / no)
   KODI_SAMBA_SUPPORT="yes"
 
@@ -214,9 +211,6 @@
 
 # cron support (yes / no)
   CRON_SUPPORT="yes"
-
-# Perf support in development builds (yes / no)
-  PERF_SUPPORT="yes"
 
 # Distribution Specific source location
   DISTRO_MIRROR="http://sources.openelec.tv/mirror"
