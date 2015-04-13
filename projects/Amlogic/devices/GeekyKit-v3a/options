@@ -1,0 +1,17 @@
+# Kernel extra targets to build
+  KERNEL_UBOOT_EXTRA_TARGET="meson8b_geekykit.dtd meson8b_geekykit.dtb"
+
+# Build Android kernel image using mkbootimg
+  BUILD_ANDROID_BOOTIMG="yes"
+
+# Path to a file that will be passed as the --second parameter to Android mkbootimg
+  ANDROID_BOOTIMG_SECOND="arch/arm/boot/dts/amlogic/meson8b_geekykit.dtb"
+
+# OpenGL-ES implementation to use (no / bcm2835-driver / opengl-meson6 / opengl-meson8)
+  OPENGLES="opengl-meson8"
+
+# additional drivers to install:
+# for a list of additinoal drivers see packages/linux-drivers
+# Space separated list is supported,
+# e.g. ADDITIONAL_DRIVERS="DRIVER1 DRIVER2"
+  ADDITIONAL_DRIVERS="RTL8192CU RTL8192DU RTL8188EU"
