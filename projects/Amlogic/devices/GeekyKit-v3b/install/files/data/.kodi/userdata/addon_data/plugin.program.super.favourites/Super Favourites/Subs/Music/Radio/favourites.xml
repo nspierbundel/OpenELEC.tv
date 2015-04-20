@@ -1,0 +1,10 @@
+<favourites>
+	<favourite name="Local Stations" thumb="">ActivateWindow(10501,&quot;plugin://plugin.audio.radio_de/stations/local/&quot;,return)</favourite>
+	<favourite name="Editorials Recommendations" thumb="">ActivateWindow(10501,&quot;plugin://plugin.audio.radio_de/stations/recommended/&quot;,return)</favourite>
+	<favourite name="Top 100 Stations" thumb="">ActivateWindow(10501,&quot;plugin://plugin.audio.radio_de/stations/top/&quot;,return)</favourite>
+	<favourite name="Browse by genre" thumb="">ActivateWindow(10501,&quot;plugin://plugin.audio.radio_de/stations/genre/&quot;,return)</favourite>
+	<favourite name="Browse by topic" thumb="">ActivateWindow(10501,&quot;plugin://plugin.audio.radio_de/stations/topic/&quot;,return)</favourite>
+	<favourite name="Browse by country" thumb="">ActivateWindow(10501,&quot;plugin://plugin.audio.radio_de/stations/country/&quot;,return)</favourite>
+	<favourite name="Browse by city" thumb="">ActivateWindow(10501,&quot;plugin://plugin.audio.radio_de/stations/city/&quot;,return)</favourite>
+	<favourite name="Search for station" thumb="">ActivateWindow(10501,&quot;plugin://plugin.audio.radio_de/stations/search/&quot;,return)</favourite>
+</favourites>

@@ -1,0 +1,156 @@
+########################################################################################################################################
+<poster>Team Phoenix</poster>
+<fanart>http://s20.postimg.org/id8xgs00t/Sports_Background.jpg</fanart>
+#######################################################################################################################################
+
+
+<item>
+<title>NBA HD</title>
+<link>plugin://plugin.video.p2p-streams/?url=da48a94b11cbf0588548bbd84eed0f233c30f384&mode=1&name=NBA+HD</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/nn/nba_tv_us.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 1</title>
+<link>plugin://plugin.video.p2p-streams/?url=e6aaeb0c93c291a4cfe2c04d05c6b1e906f54955&mode=1&name=Sky+Sports+1</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ss/sky_uk_sports1.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 2</title>
+<link>plugin://plugin.video.p2p-streams/?url=97518ab8451a5c9e8da2b92245ac0ea6622a519c&mode=1&name=Sky+Sports+2</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ss/sky_uk_sports2.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 3</title>
+<link>plugin://plugin.video.p2p-streams/?url=7f480a00ac478b65fb75cfdde76ef38ee151b887&mode=1&name=Sky+Sports+3</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ss/sky_uk_sports3.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 4</title>
+<link>plugin://plugin.video.p2p-streams/?url=203e4da82989736f8c324d588acc5d622ff6bfd3&mode=1&name=Sky+Sports+4</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ss/sky_uk_sports4.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports 5</title>
+<link>plugin://plugin.video.p2p-streams/?url=e72bb7060e8e4780e65ed45e81bf09bf352f496b&mode=1&name=Sky+Sports+5</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ss/sky_uk_sports5.png</thumbnail>
+</item>
+
+<item>
+<title>Sky Sports F1</title>
+<link>plugin://plugin.video.p2p-streams/?url=2dff503259045e4d119e6e972a3db8521c47198a&mode=1&name=Sky+Sports+F1</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ss/sky_uk_sports_f1_hd.png</thumbnail>
+</item>
+
+<item>
+<title>Premier sport</title>
+<link>plugin://plugin.video.p2p-streams/?url=9d21d20f6423387ec87463d7ac9b3c9196e7d4ed&mode=1&name=premier+Sports</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/pp/premier_sports.png</thumbnail>
+</item>
+
+<item>
+<title>Motors TV</title>
+<link>plugin://plugin.video.p2p-streams/?url=8ad01c627498d0a419c2d47da16ea798039c41ea&mode=1&name=motors+tv</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/motors_tv_fr.png</thumbnail>
+</item>
+
+<item>
+<title>BT sport 1</title>
+<link>plugin://plugin.video.p2p-streams/?url=30c6626b6d2f284a7014073208d15b74fbb2dafb&mode=1&name=BT+Sport+1</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/bb/bt_sport_1.png</thumbnail>
+</item>
+
+<item>
+<title>C-more tennis</title>
+<link>plugin://plugin.video.p2p-streams/?url=dc669896f2d5a2127215ef2281576b95857fe096&mode=1&name=C+more+tennis</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/cc/c_more_tennis.png</thumbnail>
+</item>
+
+<item>
+<title>Viasat hockey</title>
+<link>plugin://plugin.video.p2p-streams/?url=2caed15face7931c01b5be1ee8b876576539b2c3&mode=1&name=Viasat+hockey</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/vv/viasat_hockey_se.png</thumbnail>
+</item>
+
+<item>
+<title>Viasat sport sweden</title>
+<link>plugin://plugin.video.p2p-streams/?url=27372f12150c99b1efaa8de5fabdb3b24ab03d33&mode=1&name=Viasat+sport</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/vv/viasat_sport_east.png</thumbnail>
+</item>
+
+<item>
+<title>Viasat Golf</title>
+<link>plugin://plugin.video.p2p-streams/?url=aed5b1139b4ce07fca67d0b0ba8a3a0b84db53e5&mode=1&name=Viasat+golf</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/vv/viasat_golf.png</thumbnail>
+</item>
+
+<item>
+<title>Viasat Motor</title>
+<link>plugin://plugin.video.p2p-streams/?url=0f62219bbbbf28edfbbee6e8dc166c94dca062a0&mode=1&name=Viasat+motor</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/vv/viasat_motor.png</thumbnail>
+</item>
+
+<item>
+<title>TV 3 sport 1</title>
+<link>plugin://plugin.video.p2p-streams/?url=c51b77e4020afdb4d327a9f6495abb10db22a82e&mode=1&name=TV3+Sport+1</link>
+<thumbnail>http://epgs.com/imgs/logo/tv3sport1_big.png</thumbnail>
+</item>
+
+<item>
+<title>TV 3 sport 2</title>
+<link>plugin://plugin.video.p2p-streams/?url=53cdbdf779dea70e8e452b87b7d57f06e50c0f3c&mode=1&name=TV3+Sport+2</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/vv/viasat_tv3_sport2_dk.png</thumbnail>
+</item>
+
+<item>
+<title>Bein sport 1 HD (france)</title>
+<link>plugin://plugin.video.p2p-streams/?url=afe2db2bfc7c76a05bd2f41827cd23e535a2ec91&mode=1&name=Bein+sport+1</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/bb/be_in_sports_1_hk.png</thumbnail>
+</item>
+
+<item>
+<title>Bein sport 2 HD (france)</title>
+<link>plugin://plugin.video.p2p-streams/?url=979faae57e7c768f6aa5f72aea3df62b87e8cf4e&mode=1&name=Bein+sport+2</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/bb/be_in_sports_2.png</thumbnail>
+</item>
+
+<item>
+<title>Bein sport 3 HD (france)</title>
+<link>plugin://plugin.video.p2p-streams/?url=57cce84ae18265b93ba9a640e18ce40b4c7a56b3&mode=1&name=Bein+sport+3</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/bb/be_in_sports_3.png</thumbnail>
+</item>
+
+<item>
+<title>NTV football 1 HD</title>
+<link>plugin://plugin.video.p2p-streams/?url=766be11c27c0b65cc1ffd6376e62909fe93a0d05&mode=1&name=NTV+Football+1+HD</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/nn/ntv_plus_futbol.png</thumbnail>
+</item>
+
+<item>
+<title>NTV football 2 HD</title>
+<link>plugin://plugin.video.p2p-streams/?url=de5955a37140bfde5d4798615c3aaa600fb8c5d9&mode=1&name=NTV+Football+2+HD</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/nn/ntv_plus_futbol2.png</thumbnail>
+</item>
+
+<item>
+<title>NTV football 3 HD</title>
+<link>plugin://plugin.video.p2p-streams/?url=d8710e88a184543c0b6a4bb3aa50a08a3c584994&mode=1&name=NTV+Football+3+HD</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/nn/ntv_plus_futbol3.png</thumbnail>
+</item>
+
+<item>
+<title>NTV basketball</title>
+<link>plugin://plugin.video.p2p-streams/?url=05d05714f47e5d0c0fb7c9359a1449e529df2f2a&mode=1&name=NTV+basketball</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/nn/ntv_plus_basketbol.png</thumbnail>
+</item>
+
+<item>
+<title>Extreme sport</title>
+<link>plugin://plugin.video.p2p-streams/?url=05d05714f47e5d0c0fb7c9359a1449e529df2f2a&mode=1&name=extreme+sport</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ee/extreme_sports_uk.png</thumbnail>
+</item>
+

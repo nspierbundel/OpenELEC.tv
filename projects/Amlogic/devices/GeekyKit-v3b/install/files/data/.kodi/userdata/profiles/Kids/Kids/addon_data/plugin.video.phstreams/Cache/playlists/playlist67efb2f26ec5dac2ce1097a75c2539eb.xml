@@ -1,0 +1,139 @@
+#######################################################################################################################################
+<poster>TNPB</poster>
+<fanart>http://s20.postimg.org/a1hef0o0t/Main_Artwork.png</fanart>
+#######################################################################################################################################
+
+<dir>
+<name>Latest Releases</name>
+<link>http://zenica.watchkodi.com/Genre/Latest%20Releases.xml</link>
+<thumbnail>http://s20.postimg.org/mvym1f3fh/Latest_Releases_Icon.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Hot 30</name>
+<link>http://zenica.watchkodi.com/Genre/top30.xml</link>
+<thumbnail>http://s20.postimg.org/mhehb3x99/Hot_30.png</thumbnail>
+</dir>
+
+<dir>
+<name>Genre</name>
+<link>http://zenica.watchkodi.com/Directories/Genre%20Directory.xml</link>
+<thumbnail>http://s20.postimg.org/qv4yi8ial/Main_Genre_Icon.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Decades</name>
+<link>http://zenica.watchkodi.com/Directories/Decades%20Directory.xml</link>
+<thumbnail>http://s20.postimg.org/p4xie4t99/Decades_Icon.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>1080p Movies</name>
+<link>http://zenica.watchkodi.com/Movies/1080p%20Movies.xml</link>
+<thumbnail>http://s20.postimg.org/44f30inml/1080p_Movies.png</thumbnail>
+</dir>
+
+<dir>
+<name>3D Movies</name>
+<link>http://zenica.watchkodi.com/Movies/3D%20Movies.xml</link>
+<thumbnail>http://s20.postimg.org/90ips7nrx/3_D_movies.png</thumbnail>
+</dir>
+
+<dir>
+<name>TV Shows</name>
+<link>http://zenica.watchkodi.com/Directories/TV%20Shows%20Directories.xml</link>
+<thumbnail>http://s20.postimg.org/j1wqt0fml/TV_Shows1.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Kidzone</name>
+<link>http://zenica.watchkodi.com/Genre/kidszone.xml</link>
+<thumbnail>http://s20.postimg.org/optusf57h/kidzone.png</thumbnail>
+</dir>
+
+<dir>
+<name>Kidz Collectionz</name>
+<link>http://zenica.watchkodi.com/Directories/Kidz%20Collectionz.xml</link>
+<thumbnail>http://s20.postimg.org/gfuvon34t/Kidz_Collectionz.png</thumbnail>
+</dir>
+
+<dir>
+<name>Kids TV Shows</name>
+<link>http://zenica.watchkodi.com/Directories/Kids%20TV%20Directory.xml</link>
+<thumbnail>http://s20.postimg.org/yvwkmmae5/Kids_TV_Shows_256x256.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Cartoonland</name>
+<link>http://zenica.watchkodi.com/Directories/Cartoonland%20Directory.xml</link>
+<thumbnail>http://i41.tinypic.com/jpa2s0.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Martial Arts & Action Movies</name>
+<link>http://zenica.watchkodi.com/Genre/MartialArts.xml</link>
+<thumbnail>http://s20.postimg.org/tczwu6skd/Martial_Arts_Action_Movies.png</thumbnail>
+</dir>
+
+<dir>
+<name>Movie Boxsets</name>
+<link>http://zenica.watchkodi.com/Directories/720p%20Boxsets%20Directory.xml</link>
+<thumbnail>http://s20.postimg.org/rmparyhi5/Boxsets_Icon.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Superheroes</name>
+<link>http://zenica.watchkodi.com/Genre/Superheroes.xml</link>
+<thumbnail>http://s20.postimg.org/wvew8idjx/superheroes_1.png</thumbnail>
+</dir>
+
+<dir>
+<name>Organized Crime & Gangster Movies</name>
+<link>http://zenica.watchkodi.com/Genre/Organized%20Crime.xml</link>
+<thumbnail>http://s20.postimg.org/q1s0ywkrh/crime_gangster1.png</thumbnail>
+</dir>
+
+<dir>
+<name>Best of British</name>
+<link>http://zenica.watchkodi.com/Directories/BoB%20Directory.xml</link>
+<thumbnail>http://s20.postimg.org/4z8c30jkt/Best_of_British.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>British Stand Up</name>
+<link>http://zenica.watchkodi.com/TV/BoB%20TV/British%20Stand%20Up.xml</link>
+<thumbnail>http://i43.tinypic.com/16gbgqa.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Documentaries</name>
+<link>http://zenica.watchkodi.com/Directories/Docs%20Directory.xml</link>
+<thumbnail>http://s20.postimg.org/p3gmom0t9/DOCS_ICON.jpg</thumbnail>
+</dir>
+
+
+
+dir>name>Latest Cinema Releases</name>
+link>http://zenica.watchkodi.com/Genre/LatestCinema.xml</link>
+thumbnail>http://s20.postimg.org/a21h4vbtp/Latest_Cinema.jpg</thumbnail>/dir>
+
+dir><name>IMDb Movies</name>
+link>http://zenica.watchkodi.com/Movies/IMDb%20Movies.xml</link>
+thumbnail>http://s20.postimg.org/fcbl4crdp/i_MDb.png</thumbnail></dir>
+
+dir><name>720p Movies</name>
+link>http://zenica.watchkodi.com/Movies/720p%20Movies.xml</link>
+thumbnail>http://s20.postimg.org/6kgwed5p9/720p_Movies.png</thumbnail></dir>
+
+dir><name>SuperHero TV</name>
+link>http://zenica.watchkodi.com/Directories/SuperHero%20TV%20Directory.xml</link>
+thumbnail>http://s20.postimg.org/6zirc5yfx/STV.png</thumbnail></dir>
+
+dir><name>The British Connection</name>
+link>http://zenica.watchkodi.com/TV/BoB%20TV/The%20British%20Connection.xml</link>
+thumbnail>http://s20.postimg.org/4hb5vik9p/The_British_Connection.jpg</thumbnail></dir>
+
+dir><name>30 Christmas Favourites</name>
+link>NONE</link>
+thumbnail>http://i43.tinypic.com/25hz803.jpg</thumbnail></dir>
+

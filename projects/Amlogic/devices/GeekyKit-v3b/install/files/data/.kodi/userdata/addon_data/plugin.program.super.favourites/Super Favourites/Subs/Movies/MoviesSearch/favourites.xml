@@ -1,0 +1,4 @@
+<favourites>
+	<favourite name="Actors Search" thumb="special://home/addons\plugin.video.genesis\resources/art\metro\people_movies.jpg">ActivateWindow(10025,&quot;plugin://plugin.video.genesis/?action=people_movies&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.video.genesis%5Cresources%2Fart%5Cmetro%5Cfanart.jpg%26_options_sf&quot;,return)</favourite>
+	<favourite name="Title Search" thumb="special://home/addons\plugin.video.genesis\resources/art\metro\movies_search.jpg">ActivateWindow(10025,&quot;plugin://plugin.video.genesis/?action=movies_search&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.video.genesis%5Cresources%2Fart%5Cmetro%5Cfanart.jpg%26_options_sf&quot;,return)</favourite>
+</favourites>

@@ -1,0 +1,52 @@
+#######################################################################################################################################
+<poster>Team Phoenix</poster>
+<fanart>http://s20.postimg.org/id8xgs00t/Sports_Background.jpg</fanart>
+#######################################################################################################################################
+
+<dir>
+<name>Live Games</name>
+<link>http://shanghai.watchkodi.com/Directories/Live%20Sports.xml</link>
+<thumbnail>http://s20.postimg.org/lmdpcdsf1/Live_Games.png</thumbnail>
+</dir>
+
+<dir>
+<name>Acestream Sports</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Acestream%20Sports.xml</link>
+<thumbnail>http://s20.postimg.org/u4s7du599/ace_stream.png</thumbnail>
+</dir>
+
+<dir>
+<name>UK Sports</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/UK%20Sports.xml</link>
+<thumbnail>http://s20.postimg.org/wxlexv5lp/Union_Jack.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>USA/Canada Sports</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/USA.Canada%20Sports.xml</link>
+<thumbnail>http://s20.postimg.org/mz0gbdw65/Canada_USA_Flag.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>International Sports</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Foriegn%20Sports.xml</link>
+<thumbnail>http://s20.postimg.org/6iwl5ecd9/foreign.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Sports Networks</name>
+<link>http://shanghai.watchkodi.com/Directories/Sports%20Networks.xml</link>
+<thumbnail>http://s20.postimg.org/79pbb6eql/Sports_Networks.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>PPV</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/PPV.xml</link>
+<thumbnail>http://s20.postimg.org/zb3covk0t/PPV_Logo_Final.png</thumbnail>
+</dir>
+
+<dir>
+<name>Sports Replays</name>
+<link>http://shanghai.watchkodi.com/Directories/Sports%20Replays.xml</link>
+<thumbnail>http://s20.postimg.org/w5iqyo1el/Replay.png</thumbnail>
+</dir>

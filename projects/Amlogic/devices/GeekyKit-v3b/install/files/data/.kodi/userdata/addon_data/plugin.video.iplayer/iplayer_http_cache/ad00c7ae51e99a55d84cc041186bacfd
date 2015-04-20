@@ -1,0 +1,68 @@
+status: 200
+content-length: 3121
+expires: Wed, 08 Apr 2015 11:09:45 UTC
+content-location: http://www.bbc.co.uk/iplayer/playlist/b00z8kgz
+x-dynamite-bikini-state-global: 0
+accept-ranges: bytes
+x-dynamite-bikini-state-net-recommendationssupplier: 0
+x-cache-age: 0
+server: Apache
+x-dynamite-host: nolplyr418.wtf.nolcontent.net:80
+connection: keep-alive
+x-cache-action: MISS
+cache-control: s-maxage=960, max-age=960
+date: Wed, 08 Apr 2015 10:53:45 GMT
+x-dynamite-bikini-state-db-activity: 0
+access-control-allow-origin: *
+x-dynamite-bikini-state-db-publishing: 0
+content-type: application/xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist xmlns="http://bbc.co.uk/2008/emp/playlist" revision="1">
+  <config>
+    <plugin name="iPlayerLiveStats"/>
+  </config> 
+  <id>tag:bbc.co.uk,2008:pips:b00z8kgz:playlist</id>
+  <link rel="self" href="http://www.bbc.co.uk/iplayer/playlist/b00z8kgz/"/>
+  <link rel="alternate" href="http://www.bbc.co.uk/iplayer/episode/b00z8kgz/Grandpa_In_My_Pocket_Series_3_Mr_Greator_the_Creator/"/>
+  <link rel="holding" href="http://ichef.bbci.co.uk/programmeimages/p01h0q46/b00z8kgz_640_360.jpg" height="360" width="640" type="image/jpeg" />
+  <link rel="masterbrand" href="http://www.bbc.co.uk/cbeebies" />
+  <title>Grandpa In My Pocket: Series 3: Mr Greator the Creator</title>
+  <summary>Comedy series featuring a grandpa with a magical shrinking cap. Mr Mentor's inventor friend Mr Greator comes to stay, and they have an inventing competition.</summary>
+  <updated>2014-07-04T19:46:25Z</updated>  <rights>
+    <right name="embed">unset</right>
+  </rights>
+  <item kind="ident">
+    <id>tag:bbc.co.uk,2008:pips:cbeebies</id>
+    <mediator identifier="p00pvbng" name="pips" media_set="emp"/>
+  </item>
+
+  <item kind="programme" duration="720" identifier="b00z8htz" group="b00z8kgz" publisher="pips" availability_class="ondemand" >
+    <id>tag:bbc.co.uk,2008:pips:b00z8htz</id>
+    <service id="cbeebies" href="http://www.bbc.co.uk/iplayer/tv/cbeebies">CBeebies</service>
+      <masterbrand id="cbeebies" href="http://www.bbc.co.uk/iplayer/tv/cbeebies">CBeebies</masterbrand>
+    <programmeBrand id="b00r0tdx">Grandpa In My Pocket</programmeBrand>
+    <passionSite href="http://www.bbc.co.uk/programmes/b00r0tdx/microsite">Grandpa In My Pocket</passionSite>
+    <alternate id="default" />
+    <programmeSeries id="b00yw4c1">Series 3</programmeSeries>
+    <mediator identifier="b00z8htz" name="pips" media_set="emp"/>
+  </item>
+
+
+
+
+		<relatedLink>
+			<id>tag:bbc.co.uk,2008:iplayer:concept_pid:b03vp277</id>
+			<title>Grandpa In My Pocket: Series 4: Dancing with Delight</title>
+			<link rel="alternate" href="http://www.bbc.co.uk/iplayer/episode/b03vp277/Grandpa_In_My_Pocket_Series_4_Dancing_with_Delight/" />
+			<link rel="thumb" href="http://ichef.bbci.co.uk/programmeimages/p01rrgp1/b03vp277_150_84.jpg" type="image/jpeg" width="150" height="84" />
+			<summary>Children's comedy about a grandpa who can magically shrink. A ballroom-dancing couple who are staying at the Mill have an unusual breakfast experience.</summary>
+		</relatedLink>
+		<relatedLink>
+			<id>tag:bbc.co.uk,2008:iplayer:concept_pid:b03tzx95</id>
+			<title>Grandpa In My Pocket: Series 4: Mr Munchmould's Cheesy Business</title>
+			<link rel="alternate" href="http://www.bbc.co.uk/iplayer/episode/b03tzx95/Grandpa_In_My_Pocket_Series_4_Mr_Munchmoulds_Cheesy_Business/" />
+			<link rel="thumb" href="http://ichef.bbci.co.uk/programmeimages/p01qtq6h/b03tzx95_150_84.jpg" type="image/jpeg" width="150" height="84" />
+			<summary>Children's comedy about a grandpa who can magically shrink. Mr Munchmould has some alarming plans for the toyshop, so Grandpa has to use his magic.</summary>
+		</relatedLink>
+</playlist>

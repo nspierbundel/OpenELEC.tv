@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr" xmlns:og="http://opengraphprotocol.org/schema/">
+<head>
+	<title>Watch Cartoons With Your Favorite Character - SuperCartoons Page 2</title>
+
+	<meta name="msvalidate.01" content="52671E385CFE636F6AFBD6DF21B853C1" />
+
+	<meta name="description" content="Watch your Favorite Cartoon character (Tom and Jerry, Mickey Mouse, Road Runner, Daffy Duck, Pink Panther, Goofy, Porky Pig, Tweety, Speedy Gonzales And More!)" />
+
+	<meta name="keywords" content="tom and jerry, mickey mouse, tweety, road runner, pink panther, daffy duck, goofy, speedy gonzales, porky pig, sylvester, yosemite sam, pepe le pew" />
+
+	<link rel="canonical" href="http://www.supercartoons.net/characters/1"/>
+
+    
+
+    <link rel="stylesheet" type="text/css" href="http://www.supercartoons.net/css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.supercartoons.net/css/rating.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.supercartoons.net/css/cupertino/jquery-ui-1.10.3.custom.min.css" />
+    
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://www.supercartoons.net/js/jquery-ui-1.10.3.custom.min.js"></script>
+    
+    <script type="text/javascript">
+	
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-31228117-1']);
+		_gaq.push(['_trackPageview']);
+		
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	
+    </script>
+    <style>
+		.cse .gsc-control-cse, .gsc-control-cse
+		{
+			background-color: inherit !important;
+			border: inherit !important;
+		}
+    </style>
+</head>
+<body>
+	<div id="wrapper">
+        <div id="header">
+            <h1><a href="http://www.supercartoons.net/">Super <b>Cartoons</b></a></h1>
+            <div id="search"><div id='cse-search-form' style='width: 320px;'>Loading</div>
+<div id="cse" title="Search Results" style="width:100%; display: none;"></div>
+<script src='//www.google.com/jsapi' type='text/javascript'></script>
+<script type='text/javascript'>
+	google.load('search', '1', {language: 'en', style: google.loader.themes.V2_DEFAULT});
+	google.setOnLoadCallback(function() {
+		var customSearchOptions = {};
+		customSearchOptions['adoptions'] = {'layout' : 'noTop'};
+		var customSearchControl =   new google.search.CustomSearchControl('009907496566436984911:zcy5afkw9mu', customSearchOptions);
+		customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+		var options = new google.search.DrawOptions();
+		options.setSearchFormRoot('cse-search-form');
+		customSearchControl.draw('cse', options);
+		customSearchControl.setSearchCompleteCallback(this, displaySearchResults);
+	}, true);
+	function displaySearchResults(result) {
+    $('#cse').dialog({
+      autoOpen: false,
+      width: 600,
+      height: 400,
+      modal: false,
+      position: [$('#header').position().left + $('#header').width() - 600, $('#cse-search-form').position().top + 35]
+    });
+    $('#cse').dialog('open');
+	}
+</script>
+<style type='text/css'>
+  .gsc-control-cse {
+    font-family: Arial, sans-serif;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+  }
+  .gsc-control-cse .gsc-table-result {
+    font-family: Arial, sans-serif;
+  }
+  input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+    border-color: #D9D9D9;
+  }
+  input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+    border-color: #2F5BB7;
+    background-color: #357AE8;
+    background-image: none;
+    filter: none;
+
+  }
+  .gsc-tabHeader.gsc-tabhInactive {
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+  }
+  .gsc-tabHeader.gsc-tabhActive {
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    border-bottom-color: #CCCCCC
+  }
+  .gsc-tabsArea {
+    border-color: #CCCCCC;
+  }
+  .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult {
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+  }
+  .gsc-webResult.gsc-result:hover, .gsc-imageResult:hover {
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+  }
+  .gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b  {
+    color: #1155CC;
+  }
+  .gs-webResult.gs-result a.gs-title:visited, .gs-webResult.gs-result a.gs-title:visited b, .gs-imageResult a.gs-title:visited, .gs-imageResult a.gs-title:visited b {
+    color: #1155CC;
+  }
+  .gs-webResult.gs-result a.gs-title:hover, .gs-webResult.gs-result a.gs-title:hover b, .gs-imageResult a.gs-title:hover, .gs-imageResult a.gs-title:hover b {
+    color: #1155CC;
+  }
+  .gs-webResult.gs-result a.gs-title:active, .gs-webResult.gs-result a.gs-title:active b, .gs-imageResult a.gs-title:active, .gs-imageResult a.gs-title:active b {
+    color: #1155CC;
+  }
+  .gsc-cursor-page {
+    color: #1155CC;
+  }
+  a.gsc-trailing-more-results:link {
+    color: #1155CC;
+  }
+  .gs-webResult .gs-snippet, .gs-imageResult .gs-snippet, .gs-fileFormatType {
+    color: #333333;
+  }
+  .gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl {
+    color: #009933;
+  }
+  .gs-webResult div.gs-visibleUrl-short {
+    color: #009933;
+  }
+  .gs-webResult div.gs-visibleUrl-short  {
+    display: none;
+  }
+  .gs-webResult div.gs-visibleUrl-long {
+    display: block;
+  }
+  .gs-promotion div.gs-visibleUrl-short {
+    display: none;
+  }
+  .gs-promotion div.gs-visibleUrl-long  {
+    display: block;
+  }
+  .gsc-cursor-box {
+    border-color: #FFFFFF;
+  }
+  .gsc-results .gsc-cursor-box .gsc-cursor-page {
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #1155CC;
+  }
+  .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #1155CC;
+  }
+  .gsc-webResult.gsc-result.gsc-promotion {
+    border-color: #F6F6F6;
+    background-color: #F6F6F6;
+  }
+  .gsc-completion-title {
+    color: #1155CC;
+  }
+  .gsc-completion-snippet {
+    color: #333333;
+  }
+  .gs-promotion a.gs-title:link,.gs-promotion a.gs-title:link *,.gs-promotion .gs-snippet a:link  {
+    color: #1155CC;
+  }
+  .gs-promotion a.gs-title:visited,.gs-promotion a.gs-title:visited *,.gs-promotion .gs-snippet a:visited {
+    color: #1155CC;
+  }
+  .gs-promotion a.gs-title:hover,.gs-promotion a.gs-title:hover *,.gs-promotion .gs-snippet a:hover  {
+    color: #1155CC;
+  }
+  .gs-promotion a.gs-title:active,.gs-promotion a.gs-title:active *,.gs-promotion .gs-snippet a:active {
+    color: #1155CC;
+  }
+  .gs-promotion .gs-snippet, .gs-promotion .gs-title .gs-promotion-title-right, .gs-promotion .gs-title .gs-promotion-title-right * {
+    color: #333333;
+  }
+  .gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short  {
+    color: #009933;
+  }
+  .ui-widget-content { background: #fff; }
+</style></div>
+            <p>Watch cartoons online</p>
+        </div>
+        <div id="navigation">
+            <ul id="menu">
+            	<li><a href="http://www.supercartoons.net">Home</a></li>
+                <li><a href="http://www.supercartoons.net/cartoons/1">Cartoons</a></li>
+                <li><a href="http://www.supercartoons.net/characters/1" class="active">Characters</a></li>
+                <li><a href="http://www.supercartoons.net/studios/1">Studios</a></li>
+			</ul>
+        </div>
+        <div id="content">
+        	<div class="ads-leaderboard">
+				<script type="text/javascript"><!--
+                google_ad_client = "ca-pub-0969991208154533";
+                /* Horizontal - Leaderboard */
+                google_ad_slot = "4547250412";
+                google_ad_width = 728;
+                google_ad_height = 90;
+                //-->
+                </script>
+                <script type="text/javascript"
+                src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script>
+        	</div>
+        	<h3>Characters</h3>
+<div classs="characters">
+	<div class="character">
+		<a class="img" href="http://www.supercartoons.net/character/20-1/sylvester.html" title="Sylvester James Pussycat is a cartoon character, presented as a predator often trying to catch Tweety Bird, Speedy Gonzales or Hippety Hopper, but always fails to do so. Sylvester made his debut in the cartoon, &ldquo;Life With Feathers&rdquo;, released in 1945. Sylvester shows much pride, and never gives up despite the fact that his plans never show any progress.">
+			<img src="http://www.supercartoons.net/images/characters/sylvester.jpg" alt="Sylvester Thumbnail" width="240" height="180" />
+		</a>
+		<span class="title">
+        	<a href="http://www.supercartoons.net/character/20-1/sylvester.html" title="Sylvester James Pussycat is a cartoon character, presented as a predator often trying to catch Tweety Bird, Speedy Gonzales or Hippety Hopper, but always fails to do so. Sylvester made his debut in the cartoon, &ldquo;Life With Feathers&rdquo;, released in 1945. Sylvester shows much pride, and never gives up despite the fact that his plans never show any progress.">Sylvester</a>
+        </span>
+	</div>
+	<div class="character">
+		<a class="img" href="http://www.supercartoons.net/character/21-1/yosemite-sam.html" title="Samuel Michelangelo Rosenbelg, or Yosemite Sam is a cartoon character created in 1945, by Looney Tunes. Sam first cartoon was &ldquo;Hare Trigger&rdquo; directed by Friz Freleng. Sam was created for the need of more fierce opponent for the cunning Bugs Bunny, Porky Pig being to feeble. Sam also appeared in, &ldquo;Along Came Daffy&rdquo;,(one of the two cartoon were he is not paired with Bug Bunny), &ldquo;Buccaneer Bunny&rdquo;, &ldquo;Bugs Bunny Rides Again&rdquo; and many more.">
+			<img src="http://www.supercartoons.net/images/characters/yosemite-sam.jpg" alt="Yosemite Sam Thumbnail" width="240" height="180" />
+		</a>
+		<span class="title">
+        	<a href="http://www.supercartoons.net/character/21-1/yosemite-sam.html" title="Samuel Michelangelo Rosenbelg, or Yosemite Sam is a cartoon character created in 1945, by Looney Tunes. Sam first cartoon was &ldquo;Hare Trigger&rdquo; directed by Friz Freleng. Sam was created for the need of more fierce opponent for the cunning Bugs Bunny, Porky Pig being to feeble. Sam also appeared in, &ldquo;Along Came Daffy&rdquo;,(one of the two cartoon were he is not paired with Bug Bunny), &ldquo;Buccaneer Bunny&rdquo;, &ldquo;Bugs Bunny Rides Again&rdquo; and many more.">Yosemite Sam</a>
+        </span>
+	</div>
+	<div class="character">
+		<a class="img" href="http://www.supercartoons.net/character/22-1/speedy-gonzales.html" title="Gonzales is a racing mouse character , and one of the best known Looney Tunes stars. Gonzales outfit usually consists of a traditional white shirt and trousers, red kerchief and sombrero, worn in the rural Mexican villages. Gonzales first appeared in the cartoon &ldquo;Cat-Tails for Two&rdquo; in 1955, directed by Robert McKimson. In 1999, the tv station Cartoon Network discontinued to air Speedy Gonzales, claiming that it contains racism.">
+			<img src="http://www.supercartoons.net/images/characters/speedy-gonzales.jpg" alt="Speedy Gonzales Thumbnail" width="240" height="180" />
+		</a>
+		<span class="title">
+        	<a href="http://www.supercartoons.net/character/22-1/speedy-gonzales.html" title="Gonzales is a racing mouse character , and one of the best known Looney Tunes stars. Gonzales outfit usually consists of a traditional white shirt and trousers, red kerchief and sombrero, worn in the rural Mexican villages. Gonzales first appeared in the cartoon &ldquo;Cat-Tails for Two&rdquo; in 1955, directed by Robert McKimson. In 1999, the tv station Cartoon Network discontinued to air Speedy Gonzales, claiming that it contains racism.">Speedy Gonzales</a>
+        </span>
+	</div>
+	<div class="character">
+		<a class="img" href="http://www.supercartoons.net/character/23-1/tasmanian-devil.html" title="Designed after a real Tasmanian devil, comes one of the most popular villan in the world of animation. Created by Robert McKimson, the beast that eats everything in his way, and a special lust for rabbits, makes his debut in &ldquo;Bedeviled Rabbit&rdquo;, aired on April 13, 1957. He also appeared paired with Daffy Duck in &ldquo;Ducking the Devil&rdquo;, on August 17, 1957.">
+			<img src="http://www.supercartoons.net/images/characters/tasmanian-devil.jpg" alt="Tasmanian Devil Thumbnail" width="240" height="180" />
+		</a>
+		<span class="title">
+        	<a href="http://www.supercartoons.net/character/23-1/tasmanian-devil.html" title="Designed after a real Tasmanian devil, comes one of the most popular villan in the world of animation. Created by Robert McKimson, the beast that eats everything in his way, and a special lust for rabbits, makes his debut in &ldquo;Bedeviled Rabbit&rdquo;, aired on April 13, 1957. He also appeared paired with Daffy Duck in &ldquo;Ducking the Devil&rdquo;, on August 17, 1957.">Tasmanian Devil</a>
+        </span>
+	</div>
+	<div class="character">
+		<a class="img" href="http://www.supercartoons.net/character/24-1/tom-jerry.html" title="The most famous duo of all time, Tom and Jerry, holds the top as one of the most well-known cartoon characters ever created. Their everlasting rivalry and Toms relentless struggle to catch Jerry, becomes an endless cycle of attempts to outwit each other, using elaborate gimmicks and devices. The show lasted from July 19, 1941, to September 27, 2005, with 163 episodes released. The shorts: Yankee Doodle Mouse, Mouse Trouble, Quiet Please! ,The Cat Concerto, The Little Orphan, The Two Mouseketeers and Johann Mouse won the Academy Award for Best Animated Short Film.">
+			<img src="http://www.supercartoons.net/images/characters/tom-jerry.jpg" alt="Tom & Jerry Thumbnail" width="240" height="180" />
+		</a>
+		<span class="title">
+        	<a href="http://www.supercartoons.net/character/24-1/tom-jerry.html" title="The most famous duo of all time, Tom and Jerry, holds the top as one of the most well-known cartoon characters ever created. Their everlasting rivalry and Toms relentless struggle to catch Jerry, becomes an endless cycle of attempts to outwit each other, using elaborate gimmicks and devices. The show lasted from July 19, 1941, to September 27, 2005, with 163 episodes released. The shorts: Yankee Doodle Mouse, Mouse Trouble, Quiet Please! ,The Cat Concerto, The Little Orphan, The Two Mouseketeers and Johann Mouse won the Academy Award for Best Animated Short Film.">Tom & Jerry</a>
+        </span>
+	</div>
+	<div class="character">
+		<a class="img" href="http://www.supercartoons.net/character/26-1/the-pink-panther.html" title="Pink Panther is a tall and skinny pink panther with carefree and laid-back temperament. Created by Blake Edwards, Friz Freleng  and Hawley Pratt in 1964. Pink Panther was first created for the need of the live-action movie &ldquo;The Pink Panther&rdquo; (1964), showing at the opening title. The movie and the animated titles were so popular, that the directors instantly decided to start an animated show staring Pink Panther.">
+			<img src="http://www.supercartoons.net/images/characters/the-pink-panther.jpg" alt="The Pink Panther Thumbnail" width="240" height="180" />
+		</a>
+		<span class="title">
+        	<a href="http://www.supercartoons.net/character/26-1/the-pink-panther.html" title="Pink Panther is a tall and skinny pink panther with carefree and laid-back temperament. Created by Blake Edwards, Friz Freleng  and Hawley Pratt in 1964. Pink Panther was first created for the need of the live-action movie &ldquo;The Pink Panther&rdquo; (1964), showing at the opening title. The movie and the animated titles were so popular, that the directors instantly decided to start an animated show staring Pink Panther.">The Pink Panther</a>
+        </span>
+	</div>
+	<div class="character">
+		<a class="img" href="http://www.supercartoons.net/character/27-1/popeye.html" title="The sailor man with bulging forearms, a mighty punch and an affinity for canned spinach, Popeye captured the hearts of millions of fans worldwide, becoming the first cartoon character ever to be immortalized in public sculpture, stationed in Cristal City, Texas. Popeye made his first appearance on Jan. 17, 1929, in Elzie Segar&rsquo;s comic strip. His first debut on the screen was in a Betty Boop cartoon, named &ldquo;Popeye The Sailor&rdquo; in 1933, animated by the Fleischer Studios.">
+			<img src="http://www.supercartoons.net/images/characters/popeye.jpg" alt="Popeye Thumbnail" width="240" height="180" />
+		</a>
+		<span class="title">
+        	<a href="http://www.supercartoons.net/character/27-1/popeye.html" title="The sailor man with bulging forearms, a mighty punch and an affinity for canned spinach, Popeye captured the hearts of millions of fans worldwide, becoming the first cartoon character ever to be immortalized in public sculpture, stationed in Cristal City, Texas. Popeye made his first appearance on Jan. 17, 1929, in Elzie Segar&rsquo;s comic strip. His first debut on the screen was in a Betty Boop cartoon, named &ldquo;Popeye The Sailor&rdquo; in 1933, animated by the Fleischer Studios.">Popeye</a>
+        </span>
+	</div>
+	<div class="character">
+		<a class="img" href="http://www.supercartoons.net/character/28-1/pepe-le-pew.html" title="The womanizer of the cartoon world, Pepe Le Pew, a skunk that can&rsquo;t control his emotions, and affections towards anyone that resembles a female skunk. Pepe is stereotypically French, and In everlasting search of a soul mate. Pepe Le Pew is one of the most carefree, relaxed and tolerant cartoon character of all time.">
+			<img src="http://www.supercartoons.net/images/characters/pepe-le-pew.jpg" alt="Pepe Le Pew Thumbnail" width="240" height="180" />
+		</a>
+		<span class="title">
+        	<a href="http://www.supercartoons.net/character/28-1/pepe-le-pew.html" title="The womanizer of the cartoon world, Pepe Le Pew, a skunk that can&rsquo;t control his emotions, and affections towards anyone that resembles a female skunk. Pepe is stereotypically French, and In everlasting search of a soul mate. Pepe Le Pew is one of the most carefree, relaxed and tolerant cartoon character of all time.">Pepe Le Pew</a>
+        </span>
+	</div>
+	<div class="character">
+		<a class="img" href="http://www.supercartoons.net/character/29-1/barnyard-dawg.html" title="Barnyard Dawg or George  P. Dog is a cartoon character illustrated as a basset hound. Barnyard is known for his never ending hostility towards Foghorn Leghorn. Robert McKimson presented Barnyard in&rdquo; Walky Talky Hawky&rdquo;, co-staring with Foghorn as well as Henery Hawk. He also was cast as pet to Porky Pig in &ldquo;One Meat Brawl&rdquo; in 1947, and &ldquo;Daffy Duck Hunt&rdquo; in 1949.">
+			<img src="http://www.supercartoons.net/images/characters/barnyard-dawg.jpg" alt="Barnyard Dawg Thumbnail" width="240" height="180" />
+		</a>
+		<span class="title">
+        	<a href="http://www.supercartoons.net/character/29-1/barnyard-dawg.html" title="Barnyard Dawg or George  P. Dog is a cartoon character illustrated as a basset hound. Barnyard is known for his never ending hostility towards Foghorn Leghorn. Robert McKimson presented Barnyard in&rdquo; Walky Talky Hawky&rdquo;, co-staring with Foghorn as well as Henery Hawk. He also was cast as pet to Porky Pig in &ldquo;One Meat Brawl&rdquo; in 1947, and &ldquo;Daffy Duck Hunt&rdquo; in 1949.">Barnyard Dawg</a>
+        </span>
+	</div>
+	<div class="character">
+		<a class="img" href="http://www.supercartoons.net/character/30-1/ralph-wolf-and-sam-sheepdog.html" title="Ralph Wolf and Sam Sheepdog are a cartoon characters created by Chuck Jones. Ralph Wolf is almost the same character as Wile E. Coyote, having the same pointy ears, brown fur and skinny body. The two characters can be distinguished by their personality, by Ralph being less tenacious than Wile. Sam Sheepdog is a large, furry dog, capable of disqualifying Ralph with only one punch.">
+			<img src="http://www.supercartoons.net/images/characters/ralph-wolf-and-sam-sheepdog.jpg" alt="Ralph Wolf and Sam Sheepdog Thumbnail" width="240" height="180" />
+		</a>
+		<span class="title">
+        	<a href="http://www.supercartoons.net/character/30-1/ralph-wolf-and-sam-sheepdog.html" title="Ralph Wolf and Sam Sheepdog are a cartoon characters created by Chuck Jones. Ralph Wolf is almost the same character as Wile E. Coyote, having the same pointy ears, brown fur and skinny body. The two characters can be distinguished by their personality, by Ralph being less tenacious than Wile. Sam Sheepdog is a large, furry dog, capable of disqualifying Ralph with only one punch.">Ralph Wolf and Sam Sheepdog</a>
+        </span>
+	</div>
+	<div class="character">
+		<a class="img" href="http://www.supercartoons.net/character/31-1/foghorn-leghorn.html" title="Foghorn Leghorn is a tall, adult rooster with a Virginian accent and a loud speaking voice. His first cartoon was Walky Talky Hawky released in 1946, alongside with Henery Hawk, and his adversary Barnyard Dawn. He got his first name after a horn that is used to warn vehicles of navigational hazard, resembling his piercing, monotonous voice and his last after a breed of chicken. He also starred in: Crowing Pains,The Foghorn Leghor,Henhouse Henery and many more.">
+			<img src="http://www.supercartoons.net/images/characters/foghorn-leghorn.jpg" alt="Foghorn Leghorn Thumbnail" width="240" height="180" />
+		</a>
+		<span class="title">
+        	<a href="http://www.supercartoons.net/character/31-1/foghorn-leghorn.html" title="Foghorn Leghorn is a tall, adult rooster with a Virginian accent and a loud speaking voice. His first cartoon was Walky Talky Hawky released in 1946, alongside with Henery Hawk, and his adversary Barnyard Dawn. He got his first name after a horn that is used to warn vehicles of navigational hazard, resembling his piercing, monotonous voice and his last after a breed of chicken. He also starred in: Crowing Pains,The Foghorn Leghor,Henhouse Henery and many more.">Foghorn Leghorn</a>
+        </span>
+	</div>
+</div>
+<div class="pages">
+	&laquo; <a href="http://www.supercartoons.net/characters/1">1</a>
+	<a class="active">2</a> &raquo;
+</div>        	        	<div class="ads-leaderboard clear" style="padding-top: 30px;">
+		    	<script type="text/javascript"><!--
+				google_ad_client = "ca-pub-0969991208154533";
+				/* Horizontal - Bottom */
+				google_ad_slot = "1344547290";
+				google_ad_width = 728;
+				google_ad_height = 90;
+				//-->
+				</script>
+				<script type="text/javascript"
+				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>
+		    </div>
+			        </div>
+    </div>
+    <div id="footer">
+    	<div id="social">
+            <a href="http://www.facebook.com/SuperCartoons" target="_blank" title="Visit our Facebook fan page"><img src="http://www.supercartoons.net/images/facebook.png" width="32" height="32" /></a>
+        	<a href="https://twitter.com/SuperCartoons" target="_blank" title="Follow us on Twitter"><img src="http://www.supercartoons.net/images/twitter.png" width="32" height="32" /></a>
+        </div>
+    	<br />
+    	<div><a href="http://www.supercartoons.net/legal-disclaimer" target="_blank">Legal Disclaimer</a></div>
+        <br />
+        &copy; 2012-2013 SuperCartoons.net
+    </div>
+</body>
+</html>

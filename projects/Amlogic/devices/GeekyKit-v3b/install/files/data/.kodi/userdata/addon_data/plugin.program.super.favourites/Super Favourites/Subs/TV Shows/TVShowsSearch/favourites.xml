@@ -1,0 +1,4 @@
+<favourites>
+	<favourite name="People Search" thumb="special://home/addons\plugin.video.genesis\resources/art\metro\people_shows.jpg">ActivateWindow(10025,&quot;plugin://plugin.video.genesis/?action=people_shows&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.video.genesis%5Cresources%2Fart%5Cmetro%5Cfanart.jpg%26_options_sf&quot;,return)</favourite>
+	<favourite name="Title Search" thumb="special://home/addons\plugin.video.genesis\resources/art\metro\shows_search.jpg">ActivateWindow(10025,&quot;plugin://plugin.video.genesis/?action=shows_search&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%5Cplugin.video.genesis%5Cresources%2Fart%5Cmetro%5Cfanart.jpg%26_options_sf&quot;,return)</favourite>
+</favourites>

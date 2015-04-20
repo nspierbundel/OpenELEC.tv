@@ -1,0 +1,37 @@
+<settings>
+	<category label="Accounts">>
+	     <setting type="lsep" label="VeeHD (Required)"/>
+        <setting id="vhd_account" type="bool" label="Enable Log in" default="false"/>
+		<setting id="vhd_user" type="text" label="Username" default="" enable="!eq(-1,false)"/>
+		<setting id="vhd_pass" type="text" option="hidden" label="Password" default="" enable="!eq(-2,false)"/>
+		<setting type="lsep" label="Movreel (For Native Resolver Only)"/>
+		<setting id="movreel_account" type="bool" label="Enable Log in" default="false"/>
+		<setting id="movreel_user" type="text" label="Username" default="" enable="!eq(-1,false)"/>
+		<setting id="movreel_password" type="text" option="hidden" label="password" default="" enable="!eq(-2,false)"/>
+    </category>
+    <category label="Native Resolvers">
+          <setting type="lsep" label="If enabled, Phoenix will use Internal resolvers"/>
+		 <setting id="use_movreel" type="bool" label="Movreel Resolver" default="true"/>
+		 <setting id="use_billion" type="bool" label="BillionUploads Resolver" default="true"/>
+		 <setting id="use_180upload" type="bool" label="180Upload Resolver" default="true"/>
+   	</category>
+   	<category label="Auto-View">
+		<setting id="auto-view" type="bool" label="Enable Auto View" default="true"/>
+		<setting id="default-view" type="number" label="Default View" default="500" enable="!eq(-5,false)"/>
+   	</category>
+
+    <category label="Downloads">>
+      <setting id="download_folder" type="folder" label="Downloads Folder" default="" />
+    </category>
+     <category label="Cache">>
+      <setting id="cache_enable" type="bool" label="Enable Cache" default="true"/>
+      <setting id="cache_proxy" type="enum" values="cache|metacache" label="Proxy" default="" enable="!eq(-1,false)"/>
+	  <setting id="cache_expires" type="number" label="Expiration Time" default="7200" enable="!eq(-2,false)"/>
+    </category>
+    	<category label="MetaData">
+    	<setting id="md_switch" type="bool" label="Enable MetaData" default="false"/>
+    	</category>
+</settings>
+
+
+

@@ -1,0 +1,4 @@
+<favourites>
+	<favourite name="Import from remote file" thumb="DefaultFile.png">PlayMedia(&quot;plugin://plugin.program.super.favourites/?label=Import+from+remote+file&amp;mode=3100&amp;image=DefaultFile.png&quot;)</favourite>
+	<favourite name="Racing UK" thumb="special://home/addons/plugin.video.mksports/icon.png">PlayMedia(&quot;plugin://plugin.video.mksports/?url=http%3A%2F%2F109.200.20.28%3A1918%2Fmagnate%2F170simpleracinguk%2Fplaylist.m3u8&amp;mode=100&amp;name=Racing+UK&amp;description=&amp;sf_options=fanart%3Dspecial%3A%2F%2Fhome%2Faddons%2Fplugin.video.mksports%2Ffanart.jpg%26winID%3D10025%26_options_sf&quot;)</favourite>
+</favourites>
