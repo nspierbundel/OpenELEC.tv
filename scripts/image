@@ -359,7 +359,7 @@ IMAGE_NAME="$DISTRONAME-$TARGET_VERSION"
         echo "Signing the update package"
         mkdir -p sign
         SIGNAPK_DIR="$ROOT/tools/signapk"
-        java -Xmx1024m -jar $SIGNAPK_DIR/signapk.jar -w $SIGNAPK_DIR/testkey.x509.pem $SIGNAPK_DIR/testkey.pk8 update.zip sign/$IMAGE_NAME-update.zip
+        java -Xmx2048m -jar $SIGNAPK_DIR/signapk.jar -w $SIGNAPK_DIR/testkey.x509.pem $SIGNAPK_DIR/testkey.pk8 update.zip sign/$IMAGE_NAME-update.zip
 
         # create the auto-install package
         if [ -f "$INSTALL_SRC_DIR/files/recovery.img" ]; then
