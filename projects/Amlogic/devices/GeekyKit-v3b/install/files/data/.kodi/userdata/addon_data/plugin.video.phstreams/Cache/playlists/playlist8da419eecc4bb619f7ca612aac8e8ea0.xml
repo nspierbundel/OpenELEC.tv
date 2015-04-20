@@ -1,0 +1,22 @@
+#######################################################################################################################################
+<poster>Team Phoenix</poster>
+<fanart>http://s20.postimg.org/id8xgs00t/Sports_Background.jpg</fanart>
+#######################################################################################################################################
+
+<dir>
+<name>Live Football Games</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Live%20Games/Live%20Football.xml</link>
+<thumbnail>http://s20.postimg.org/9h2qqkysd/Football_Icon.png</thumbnail>
+</dir>
+
+<dir>
+<name>Live Baseball Games</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Live%20Games/Live%20Baseball.xml</link>
+<thumbnail>http://s20.postimg.org/qivksodnh/Baseball_Icon.png</thumbnail>
+</dir>
+
+<dir>
+<name></name>
+<link></link>
+<thumbnail></thumbnail>
+</dir>

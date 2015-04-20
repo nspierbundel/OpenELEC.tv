@@ -1,0 +1,28 @@
+#######################################################################################################################################
+<poster>Team Phoenix</poster>
+<fanart>http://s20.postimg.org/7iw2sl6al/WWE.jpg</fanart>
+#######################################################################################################################################
+
+<dir>
+<name>Monday Night RAW</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Sports%20Replays/WWE/Monday%20Night%20RAW.xml</link>
+<thumbnail>http://s20.postimg.org/poreplzbx/Monday_Night_Raw.png</thumbnail>
+</dir>
+
+<dir>
+<name>WWE Smackdown</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Sports%20Replays/WWE/WWE%20Smackdown.xml</link>
+<thumbnail>http://s20.postimg.org/686p3347x/Smackdown.png</thumbnail>
+</dir>
+
+<dir>
+<name>PPV's</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Sports%20Replays/WWE/PPV's.xml</link>
+<thumbnail>http://s20.postimg.org/jmjrz4avx/wwe_ppv.png</thumbnail>
+</dir>
+
+<dir>
+<name>Wrestlemania I-XXXI</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Sports%20Replays/WWE/Wrestlemania%20I-XXXI.xml</link>
+<thumbnail>http://s20.postimg.org/nks839xct/wrestlemania.png</thumbnail>
+</dir>

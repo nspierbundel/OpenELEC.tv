@@ -1,0 +1,13 @@
+<settings>
+    <setting id="DEBUG" value="false" />
+    <setting id="VERSION" value="0.0.0" />
+    <setting id="VIDEO" value="false" />
+    <setting id="adult" value="true" />
+    <setting id="dummy" value="" />
+    <setting id="email" value="" />
+    <setting id="localcopy" value="true" />
+    <setting id="login" value="false" />
+    <setting id="password" value="" />
+    <setting id="username" value="" />
+    <setting id="zip" value="/Users/Jules/Desktop/" />
+</settings>

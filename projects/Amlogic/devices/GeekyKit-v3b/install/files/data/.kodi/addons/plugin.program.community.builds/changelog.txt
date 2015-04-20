@@ -1,0 +1,99 @@
+TODO:
+- See if there's a way to not use shutil, maybe there's a way to remove items from a zip rather than pre-archive process?
+- Move temporary id data to the settings.xml so it doesn't disappear when resetting the addon.
+
+1.3.2:
+- Added download count to database, can now sort by most popular, alphabetically, latest and recently updated.
+- Added option for private builds, these builds can be added to the CB Portal and marked as private and are only accessible with a password
+- Added option for reseller builds, these builds can be added to the CB Portal and marked as private and are only accessible with a password
+- Added function that updates the build details when applying guisettings fix.
+- Added notification that shows if the build is only partially installed.
+- Fixed the log uploader so it works with the new API at xbmclogs.com
+- Fixed annoying bug with download path check appearing twice.
+- Added check for Android explaining the download check results may be incorrect.
+- Wasn't deleting builds even if checked in addon settings, now fixed.
+- Added option to open addon settings directly from the addon menu
+- Hopefully fixed the bug with script errors occasionally occuring on startup. Think it was to do with some unfinished code, now commented out.
+- Added the ability to copy the profiles.xml file when creating a backup, no need to manually create anymore.
+- Added better progress dialogs for when creating a backup
+- Added the ability to show up to 5 video guides as well as a preview video - see the gandelf kids version for a good example.
+- Removed the warning dialog when clicking on restore menu, kept popping up during the backup process.
+
+1.3.1:
+- Added function to allow for profiles, it wasn't an easy one to work out but with gandelfs testing I think we got there!
+- Added option to install guisettings or community build from a locally stored file.
+
+1.2.9:
+- Added additional tools section, has force close and fix paths to special. Also moved wipe and delete builds in there.
+- Fixed the problem with zips not showing when browsing for backups
+- Improved the backup code, although Android is still crapping out with the CB backup option - it really doesn't like the shutil command by the looks of it!
+- Added option to overwrite existing library databases or keep.
+- Added better notifications to stop users from rebooting when they think it's froze
+- Started work on hooks and sorted out loads of other error checking and bugs that I've forgotten about now
+
+1.2.5:
+- Add default skin field in database and show in community build install notification
+- Fixed community backup zip process for non-windows systems, also removes all that crap that Mac OS puts in zips!
+- Added error checking to see if the download path has write permissions
+- Fixed re-load profile issue so theoretically XBMC shouldn't require a restart after install.
+- Added a whole load more error checking
+- Made a new dialog to make it clearer what merge and wipe options do
+- moved guisettings.xml to addon_data folder so it's not deleted when choosing the wipe option when installing a CB
+- Think I've managed to fix the problem with Win8.1, have a feeling it was something to do with folders not being fully deleted.
+- Added a timer reminding the user to update the guisettings file.
+
+1.2.1:
+- Added some bug fixes, old default.py is copied over so the second part of install can be completed
+- Fixed bug with merge CB install not working
+
+1.2.0:
+- Fixed sleep bug in restore function (forgot to take it out of previous release)
+- Add File browser for choosing what backup to install
+- Root menu will show the local backup you have installed
+- Remove all empty folders after wipe and also show notification, currently there is no notification once complete.
+- Add option to delete builds
+- Change download names so they aren't just generic community.zip
+- Add option in settings to keep downloaded community builds
+
+1.1.9:
+- Added check for wipe (fresh start). Now needs to be running Confluence otherwise will not wipe.
+- Fixed Force Close. No longer needed as we're now using UnloadSkin and ReloadSkin followed by clean exit. User just needs to switch to desired skin on next prior to doing step 2.
+- Option to create your own community build. Everything is done for you and zipped up, just needs uploading and a post made on totalxbmc.tv forum.
+- Better error checking to make sure paths exist.
+- Now an option to just install the guisettings.xml file, useful for users that didn't force close correctly.
+- Changed install method to 2-part method...
+---- Part 1 installs as usual and just quits xbmc (not saving new guisettings.xml)
+---- Part 2 will continue automatically when XBMC is restarted, it will MERGE the new guisettings with the old.
+---- The merge currently keeps all existing settings except for <skinsettings> <skin default> and <lookandfeel> which is grabbed from the new build.
+- Registered members now get the following benefits as well as the previously addded search options:
+----- Show installed build
+---- Notify of any new updates to the build
+
+1.1.5:
+- Quick fix for adding id.xml if one doesn't exist - accidentally pushed test version!
+
+1.1.4:
+- Fixed popup screen issue, now opens a window rather than ShowPicture()
+- Added a check to see if download location is a valid link
+- Added lots of code ready to check for updates, will be activated in next version
+
+1.1.3:
+- Complete re-code, rather than scraping a text file we are using the database
+- Added login feature for extra features. More features coming soon, login will soon make sense!
+- Added option to hide adult in addon settings
+- Only builds compatible for the version of XBMC currently running will show
+- Added splash and dialog if not logged in
+- Added check for new important video, this will also be used to pull running build info
+- Added lots of different search criteria (must be logged in)
+- Fixed Android wipe option
+- No loner wipes Community Builds addon or data when doing fresh install.
+- Added video guides
+
+1.0.9:
+- Removed zip folder check on first run, only checks when accessing backup options which fixes the script error
+- Added option to do a fresh community build (wipe) or merge with existing build.
+- Added new icon
+- Added some more exit commands, hopefully a few more may now work.
+- Added clean exit checks, should now give better instructions if force close doesn't work
+- Added instructions
+- Added exception if Android. For some reason a clean install doesn't work so just go straight into merge.

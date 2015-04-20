@@ -1,0 +1,6 @@
+<mediasources>
+    <network>
+        <location id="0">smb://User:0000@User-PC/</location>
+        <location id="1">smb://User:0000@User-PC/</location>
+    </network>
+</mediasources>

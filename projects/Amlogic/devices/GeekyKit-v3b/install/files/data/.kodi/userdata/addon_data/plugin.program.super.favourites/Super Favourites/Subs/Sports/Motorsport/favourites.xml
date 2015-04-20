@@ -1,0 +1,4 @@
+<favourites>
+	<favourite name="NASCAR" thumb="http://cliqaddon.com/support/commoncore/tvaddons/moviedb/showgunart/images//espn.png">ActivateWindow(10025,&quot;plugin://plugin.video.moviedb/?mode=espnlist&amp;name=NASCAR&amp;url=2492290&amp;sf_options=fanart%3Dhttp%3A%2F%2Fcliqaddon.com%2Fsupport%2Fcommoncore%2Ftvaddons%2Fmoviedb%2Fshowgunart%2Fimages%2Ffanart%2Ffanart.jpg%26_options_sf&quot;,return)</favourite>
+	<favourite name="RACING" thumb="http://cliqaddon.com/support/commoncore/tvaddons/moviedb/showgunart/images//espn.png">ActivateWindow(10025,&quot;plugin://plugin.video.moviedb/?mode=espnlist&amp;name=RACING&amp;url=2755879&amp;sf_options=fanart%3Dhttp%3A%2F%2Fcliqaddon.com%2Fsupport%2Fcommoncore%2Ftvaddons%2Fmoviedb%2Fshowgunart%2Fimages%2Ffanart%2Ffanart.jpg%26_options_sf&quot;,return)</favourite>
+</favourites>

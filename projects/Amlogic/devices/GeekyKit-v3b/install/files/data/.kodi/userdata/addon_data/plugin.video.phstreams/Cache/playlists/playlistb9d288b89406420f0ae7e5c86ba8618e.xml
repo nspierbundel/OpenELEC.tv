@@ -1,0 +1,363 @@
+#######################################################################################################################################
+<poster>Team Phoenix</poster>
+<fanart>http://s20.postimg.org/id8xgs00t/Sports_Background.jpg</fanart>
+#######################################################################################################################################
+
+<item>
+<title>Golf HD [COLOR yellow] !NEEDS USA VPN![/COLOR]</title>
+<link>http://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/4296k/prog.m3u8</link>
+<thumbnail>http://img1.wikia.nocookie.net/__cb20100323073441/logopedia/images/3/3a/Golf_Channel_2008.png</thumbnail>
+</item>
+
+<item>
+<title>Golf</title>
+<link>rtmpe://46.246.124.93:1935/l playpath=golf_usa swfUrl=http://p.jwpcdn.com/6/8/jwplayer.flash.swf pageUrl=http://www.hdcast.org/embedlive4.php?u=golf_usa&vw=620&vh=470&domain=usachannels.tv token=Fo5_n0w?U.rA6l3-70w47ch live=1</link>
+<thumbnail>http://img1.wikia.nocookie.net/__cb20100323073441/logopedia/images/3/3a/Golf_Channel_2008.png</thumbnail>
+</item>
+
+<item>
+<title>WWE</title>
+<link>rtmp://94.102.49.126:443/liverepeater playpath=29 swfUrl=http://popeoftheplayers.eu/atdedead.swf pageUrl=http://popeoftheplayers.eu/crichd.php?id=29&width=620&height=450 token=#atd%#$ZH</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/a/a9/Wwe_logo_2.png</thumbnail>
+</item>
+
+
+
+
+
+<item>
+<title>ESPN</title>
+<link>rtmpe://46.246.124.89:1935/l playpath=espnn swfUrl=http://cdn.zerocast.tv/player/jwplayer.flash.swf pageUrl=http://www.hdcast.org/embedlive4.php?u=espnn&vw=620&vh=470&domain=usachannels.tv token=Fo5_n0w?U.rA6l3-70w47ch live=1</link>
+<thumbnail>http://en.ratrodstudio.com/wp-content/uploads/2012/02/espn_icon-200x200.png</thumbnail>
+</item>
+
+<item>
+<title>ESPN 2</title>
+<link>rtmp://37.48.118.32:1935/live?wmsAuthSign=c2VydmVyX3RpbWU9Mi8yNC8yMDE1IDEyOjMzOjE4IEFNJmhhc2hfdmFsdWU9M216dUt2VCtOdHltOHlQRWhMU1RhUT09JnZhbGlkbWludXRlcz0yMA==/ playpath=esnp22.stream swfUrl=http://www.finecast.tv/player6/jwplayer.flash.swf pageUrl=http://www.finecast.tv/embed4.php?u=esnp22&vw=640&vh=450 token=Fo5_n0w?U.rA6l3-70w47ch live=1</link>
+<thumbnail>http://www.freelogovectors.net/wp-content/uploads/2013/04/ESPN2_tv_logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>Fox Sports 1</title>
+<link>rtmp://37.48.118.32:1935/live?wmsAuthSign=c2VydmVyX3RpbWU9Mi8yNC8yMDE1IDEyOjM3OjI1IEFNJmhhc2hfdmFsdWU9MnZDb1lMZjlNOGNMOXpGUlF4SkNwUT09JnZhbGlkbWludXRlcz0yMA==/ playpath=foxsp1.stream swfUrl=http://www.finecast.tv/player6/jwplayer.flash.swf pageUrl=http://www.finecast.tv/embed4.php?u=foxsp1&vw=640&vh=450 token=Fo5_n0w?U.rA6l3-70w47ch live=1</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ff/fox_sports_au_1.png</thumbnail>
+</item>
+
+<item>
+<title>Fox Sports 2 </title>
+<link>rtmp://37.48.118.32:1935/live?wmsAuthSign=c2VydmVyX3RpbWU9Mi8yNC8yMDE1IDEyOjM4OjE4IEFNJmhhc2hfdmFsdWU9SzEzQW1icGUrT1hrNHJpMmJRenEvZz09JnZhbGlkbWludXRlcz0yMA==/ playpath=foxsp2.stream swfUrl=http://www.finecast.tv/player6/jwplayer.flash.swf pageUrl=http://www.finecast.tv/embed4.php?u=foxsp2&vw=640&vh=450 token=Fo5_n0w?U.rA6l3-70w47ch live=1</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ff/fox_sports_au_2.png</thumbnail>
+</item>
+
+<item>
+<title>Fox sport 4</title>
+<link>http://154.57.145.38/hls/5501bedfb6a26/stream.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/ff/fox_sports_global.png</thumbnail>
+</item>
+
+<item>
+<title>NBA</title>
+<link>rtmpe://46.246.29.160:1935/l playpath=nba_usa swfUrl=http://p.jwpcdn.com/6/8/jwplayer.flash.swf pageUrl=http://www.hdcast.org/embedlive4.php?u=nba_usa&vw=620&vh=470&domain=usachannels.tv token=Fo5_n0w?U.rA6l3-70w47ch live=1</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/nn/nba_tv_us.png</thumbnail>
+</item>
+
+
+<item>
+<title>NBCSN Live Extra HD [COLOR yellow] !NEEDS USA VPN![/COLOR]</title>
+<link>http://tvenbcsn-i.Akamaihd.net/hls/live/218235/nbcsnx/4296k/prog.m3u8</link>
+<thumbnail>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfY_XRPyaD575oRB1b5o3xg31AEuB-ARP2gmMJxHcrvMye6mKk</thumbnail>
+</item>
+
+
+<item>
+<title>NBC Sportsnet</title>
+<link>rtmpe://46.246.124.65:1935/l playpath=nbcsn0 swfUrl=http://p.jwpcdn.com/6/8/jwplayer.flash.swf pageUrl=http://www.hdcast.org/embedlive4.php?u=nbcsn0&vw=620&vh=470&domain=usachannels.tv token=Fo5_n0w?U.rA6l3-70w47ch live=1</link>
+<thumbnail>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfY_XRPyaD575oRB1b5o3xg31AEuB-ARP2gmMJxHcrvMye6mKk</thumbnail>
+</item>
+
+<item>
+<title>NBC SN 1</title>
+<link>http://109.200.20.26:8981/nbc/sportsy/index.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/nn/nbc_sports_network.png</thumbnail>
+</item>
+
+<item>
+<title>MLB Network</title>
+<link>rtmp://31.220.0.195:80/live playpath=mlbxx swfUrl=http://p.jwpcdn.com/6/12/jwplayer.flash.swf pageUrl=http://reytv.co/embedu.php?live=mlbxx&vw=620&vh=490 token=%Zrey(nKa@#Z</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/mm/mlb_network.png</thumbnail>
+</item>
+
+<item>
+<title>SPORTSNET 360</title>
+<link>http://nlds187.cdnak.neulion.com/nlds/sportsnetnow/sn_360/as/live/sn_360_hd_ipad.m3u8</link>
+<thumbnail>http://cdn.rapidmanager.com/ahl/files/sportsnet_sn.gif</thumbnail>
+</item>
+
+
+<item>
+<title>SPORTSNET East</title>
+<link>rtmp://31.220.0.195:80/live playpath=sno swfUrl=http://p.jwpcdn.com/6/12/jwplayer.flash.swf pageUrl=http://reytv.co/embedu.php?live=sno&vw=620&vh=490 token=%Zrey(nKa@#Z</link>
+<thumbnail>http://cdn.rapidmanager.com/ahl/files/sportsnet_sn.gif</thumbnail>
+</item>
+
+
+<item>
+<title>TSN 1 HD</title>
+<link>http://ams-lp5.9c9media.com/hls-live/livepkgr/_definst_/liveeventNoDRM/tsnOpen8.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/tt/tsn_1_ca.png</thumbnail>
+</item>
+
+<item>
+<title>TSN 2 HD</title>
+<link>http://ams-lp7.9c9media.com/hls-live/livepkgr/_definst_/liveeventNoDRM/TSN2Open8.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/tt/tsn_2_ca.png</thumbnail>
+</item>
+
+<item>
+<title>TSN 3 HD</title>
+<link>http://ams-lp1.9c9media.com/hls-live/livepkgr/_definst_/liveeventNoDRM/TSN3Open8.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/tt/tsn_3_ca.png</thumbnail>
+</item>
+
+<item>
+<title>TSN 4 HD</title>
+<link>http://ams-lp2.9c9media.com/hls-live/livepkgr/_definst_/liveeventNoDRM/TSN4Open8.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/tt/tsn_4_ca.png</thumbnail>
+</item>
+
+<item>
+<title>TSN 5 HD</title>
+<link>http://ams-lp3.9c9media.com/hls-live/livepkgr/_definst_/liveeventNoDRM/TSN5Open8.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/tt/tsn_5_ca.png</thumbnail>
+</item>
+
+<item>
+<title>NFL Network</title>
+<link>
+<sublink>http://109.200.20.26:8981/nfl/Sports/index.m3u8</sublink>
+<sublink>rtmpe://46.246.124.30:1935/l playpath=nfluuo4 swfUrl=http://p.jwpcdn.com/6/8/jwplayer.flash.swf pageUrl=http://www.hdcast.org/embedlive4.php?u=nfluuo4&vw=620&vh=470&domain=usachannels.tv token=Fo5_n0w?U.rA6l3-70w47ch live=1</sublink>
+</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/nn/nfl_network_us.png</thumbnail>
+</item>
+
+<item>
+<title>Pac 12 washington</title>
+<link>http://xrxs.net/video/live-p12wash-2328.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/pp/pac_12_networks_us.png</thumbnail>
+</item>
+
+<item>
+<title>Pac 12 oregon</title>
+<link>http://xrxs.net/video/live-p12oreg-2328.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/pp/pac_12_networks_us.png</thumbnail>
+</item>
+
+<item>
+<title>Pac 12 National</title>
+<link>http://xrxs.net/video/live-p12netw-2328.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/pp/pac_12_networks_us.png</thumbnail>
+</item>
+
+<item>
+<title>Pac 12 Los angeles</title>
+<link>http://xrxs.net/video/live-p12losa-2328.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/pp/pac_12_networks_us.png</thumbnail>
+</item>
+
+<item>
+<title>Pac 12 Arizona</title>
+<link>http://xrxs.net/video/live-p12ariz-2328.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/pp/pac_12_networks_us.png</thumbnail>
+</item>
+
+<item>
+<title>Pac 12 Bay area</title>
+<link>http://xrxs.net/video/live-p12baya-4728.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/pp/pac_12_networks_us.png</thumbnail>
+</item>
+
+<item>
+<title>Pac 12 Mountain</title>
+<link>http://xrxs.net/video/live-p12moun-4728.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/hires/pp/pac_12_networks_us.png</thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>
+
+<item>
+<title></title>
+<link></link>
+<thumbnail></thumbnail>
+</item>

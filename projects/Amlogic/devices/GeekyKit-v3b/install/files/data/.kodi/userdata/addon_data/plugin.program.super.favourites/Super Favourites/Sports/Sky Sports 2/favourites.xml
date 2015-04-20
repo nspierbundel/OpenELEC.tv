@@ -1,0 +1,5 @@
+<favourites>
+	<favourite name="SKY SPORTS 2" thumb="http://www.entertainmentdoor.com.pk/images/channel_image/sky_sports2.png">PlayMedia(&quot;plugin://plugin.video.RobinHood-PPL-List/?url=http%3A%2F%2Fbit.do%2F3reQ&amp;mode=12&amp;sf_options=fanart%3Dhttp%3A%2F%2Ffc01.deviantart.net%2Ffs71%2Ff%2F2012%2F074%2F2%2F7%2Fnew_2013_dodge_viper_logo_by_ranock-d4st6me.jpg%26winID%3D10025%26_options_sf&quot;)</favourite>
+	<favourite name="Channel 2 - Sky Sports 2" thumb="">PlayMedia(&quot;plugin://plugin.video.sportingstreams/?url=rtmp%3A%2F%2Fvdn.sportingstreams.net%3A443%2Flive+playpath%3Dchannel2%3Fs%3DMBXrf+app%3Dlive+live%3Dtrue&amp;mode=30&amp;name=Channel+2+-+Sky+Sports+2&amp;sf_options=winID%3D10025%26_options_sf&quot;)</favourite>
+	<favourite name="Channel 2 (SD) - Sky Sports 2" thumb="">PlayMedia(&quot;plugin://plugin.video.sportingstreams/?url=rtmp%3A%2F%2Fvdn.sportingstreams.net%3A443%2Flive+playpath%3Dchannel2-sd%3Fs%3DMBXrf+app%3Dlive+live%3Dtrue&amp;mode=30&amp;name=Channel+2+%28SD%29+-+Sky+Sports+2&amp;sf_options=winID%3D10025%26_options_sf&quot;)</favourite>
+</favourites>

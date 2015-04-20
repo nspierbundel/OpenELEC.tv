@@ -1,0 +1,20 @@
+<settings>
+    <setting id="authtoken" value="" />
+    <setting id="delete" value="" />
+    <setting id="first_run" value="" />
+    <setting id="ga_time" value="2000-01-01 00:00:00" />
+    <setting id="genre" value="true" />
+    <setting id="gmtfrom" value="12" />
+    <setting id="hd" value="false" />
+    <setting id="id" value="0" />
+    <setting id="login_time" value="2000-01-01 00:00:00" />
+    <setting id="pakauth" value="" />
+    <setting id="pakurl" value="" />
+    <setting id="pass" value="" />
+    <setting id="timefrom" value="10" />
+    <setting id="timeout" value="1" />
+    <setting id="timezone" value="" />
+    <setting id="tvguide" value="false" />
+    <setting id="update" value="123789456" />
+    <setting id="user" value="" />
+</settings>

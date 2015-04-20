@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<channel>
+<name>German TV Channels</name>
+<thumbnail></thumbnail>
+
+<item>
+<title>ORF 1</title>
+<link>http://tinyurl.com/mzowzhy</link>
+<thumbnail>http://megatv.to/wp-content/uploads/2013/11/orf1-225x158.png</thumbnail>
+</item>
+
+<item>
+<title>ORF 2</title>
+<link>rtmp://89.252.59.16:1935/live playpath=orf2.stream swfUrl=http://embed.live-stream.tv/player/player.swf pageUrl=http://embed.live-stream.tv/orf2 live=true timeout=15</link>
+<thumbnail>http://megatv.to/wp-content/uploads/2013/11/orf2-225x158.png</thumbnail>
+</item>
+
+<item>
+<title>ORF 3</title>
+<link>http://tinyurl.com/orfIII</link>
+<thumbnail>http://de.kingofsat.net/jpg/orf3.jpg</thumbnail>
+</item>
+
+<item>
+<title>KIKA  [COLOR=FFFF0000]Geo Blocked In Some Areas[/COLOR]</title>
+<link>rtmp://85.239.122.162/live playpath=mk3w-3faw-3rqf-enc0-kika swfUrl=http://kikaplus.net/clients/kika/player/public/player/KIKALivePlayer.swf live=true timeout=15 pageUrl=http://kikaplus.net/clients/kika/player/tvplayer.php</link>
+<thumbnail>http://file1.npage.de/009857/81/bilder/logo_kika.gif</thumbnail>
+</item>
+
+<item>
+<title>KIKA (Link 2)</title>
+<link>rtmp://89.252.59.16:1935/live playpath=kika.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/kika.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://file1.npage.de/009857/81/bilder/logo_kika.gif</thumbnail>
+</item>
+
+<item>
+<title>ATV HD</title>
+<link>rtmp://89.252.59.16:1935/live playpath=atv.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/atv.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.tv14.net/wp-content/uploads/2010/10/ATV1.jpeg</thumbnail>
+</item>
+
+<item>
+<title>Pro7</title>
+<link>rtmp://89.252.59.16:1935/live playpath=pro7.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/pro7.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/pp/pro_sieben_ch.png</thumbnail>
+</item>
+
+<item>
+<title>NOA4 Hamburg</title>
+<link>mmsh://wt-wm1.wtnet.de/noa4hh-stream-hi?MSWMExt=.asf</link>
+<thumbnail>http://mobile-tv.ws/wp-content/uploads/2011/12/214-noa4-hamburg.jpg</thumbnail>
+</item>
+
+<item>
+<title>NOA4 Norderstedt</title>
+<link>mmsh://wt-wm1.wtnet.de/noa4-stream-hi?MSWMExt=.asf</link>
+<thumbnail>http://www.sccn.de/images/n4_logo_blau_150x57.jpg</thumbnail>
+</item>
+
+<item>
+<title>WDR</title>
+<link>http://www.metafilegenerator.de/WDR/WDR_FS/m3u8/wdrfernsehen.m3u8</link>
+<thumbnail>http://www1.wdr.de/themen/resources/img/logos/wdr.gif</thumbnail>
+</item>
+
+<item>
+<title>ZDF (Link 2) HD</title>
+<link>rtmp://89.252.59.16:1935/live playpath=zdf.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/zdf.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/zz/zdf_de_hd.jpg</thumbnail>
+</item>
+
+<item>
+<title>ZDF  [COLOR=FFFF0000]Geo Blocked In Some Areas[/COLOR]</title>
+<link>http://zdf_hds_de-f.akamaihd.net/z/de14_v1@147090/manifest.f4m</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/zz/zdf_de_hd.jpg</thumbnail>
+</item>
+
+<item>
+<title>ORF Sport  [COLOR=FFFF0000]Geo Blocked In Some Areas[/COLOR]</title>
+<link>http://apasfiisl.apa.at/f4m/orfs_q4a/orf.sdp/manifest.f4m</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/oo/orf_sport_plus.jpg</thumbnail>
+</item>
+
+<item>
+<title>RTL</title>
+<link>rtmp://wowza02.newmedia.lu/channel1/ playpath=live swfUrl=http://i.rtl.lu/common/js/jwplayer/jwplayer.flash.swf live=true timeout=15 pageUrl=http://tele.rtl.lu/livestream/</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/rr/rtl_at.jpg</thumbnail>
+</item>
+
+<item>
+<title>Das Erste  [COLOR=FFFF0000]Geo Blocked In Some Areas[/COLOR]</title>
+<link>http://daserste_live-lh.akamaihd.net/z/daserste_de@91204/manifest.f4m</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Das_Erste_HD_Logo.svg/725px-Das_Erste_HD_Logo.svg.png</thumbnail>
+</item>
+
+<item>
+<title>Das Erste (Link 2) HD</title>
+<link>rtmp://89.252.59.16:1935/live playpath=ard.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/ard.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Das_Erste_HD_Logo.svg/725px-Das_Erste_HD_Logo.svg.png</thumbnail>
+</item>
+
+<item>
+<title>3Sat</title>
+<link>rtmp://89.252.59.16:1935/live playpath=3sat.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/3sat.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/num/3sat.png</thumbnail>
+</item>
+
+<item>
+<title>Disney Channel</title>
+<link>rtmp://89.252.59.16:1935/live playpath=disneychannel.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/disney_channel.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/dd/disney_junior_de.png</thumbnail>
+</item>
+
+<item>
+<title>Nick</title>
+<link>rtmp://89.252.59.16:1935/live playpath=nickcc.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/nickcc.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/nn/nickelodeon_us.png</thumbnail>
+</item>
+
+<item>
+<title>Dmax</title>
+<link>rtmp://89.252.59.16:1935/live playpath=dmax.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/dmax.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/dd/dmax_de.png</thumbnail>
+</item>
+
+<item>
+<title>Eurosport</title>
+<link>rtmp://89.252.59.16:1935/live playpath=eurosport.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/eurosport.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ee/eurosport.png</thumbnail>
+</item>
+
+<item>
+<title>Kabel 1</title>
+<link>rtmp://89.252.59.16:1935/live playpath=kabel1.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/kabel1.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/kk/kabel_eins.png</thumbnail>
+</item>
+
+<item>
+<title>N24</title>
+<link>http://n24-live.hls.adaptive.level3.net/hls-live/n24-pssimn24live/_definst_/live/stream2.m3u8</link>
+<thumbnail>https://www.triple-it.nl/resources/files/images/n24.jpg</thumbnail>
+</item>
+
+<item>
+<title>RTL 2</title>
+<link>rtmp://89.252.59.16:1935/live playpath=rtl2.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/rtl2.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/rr/rtl2_at.png</thumbnail>
+</item>
+
+<item>
+<title>RTL Nitro</title>
+<link>rtmp://89.252.59.16:1935/live playpath=rtlnitro.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/rtlnitro.html#tab2-tab </link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/rr/rtl_nitro_de.png</thumbnail>
+</item>
+
+<item>
+<title>Super RTL</title>
+<link>rtmp://89.252.59.16:1935/live playpath=superrtl.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/superrtl.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ss/super_rtl_at.png</thumbnail>
+</item>
+
+<item>
+<title>SF 1</title>
+<link>rtmp://89.252.59.16:1935/live playpath=sf1.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/sf1.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://upload.wikimedia.org/wikipedia/en/2/27/SF_1_logo.png</thumbnail>
+</item>
+
+<item>
+<title>Sixx</title>
+<link>rtmp://89.252.59.16:1935/live playpath=sixx.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/sixx.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ss/sixx.png</thumbnail>
+</item>
+
+<item>
+<title>Sport 1</title>
+<link>rtmp://89.252.59.16:1935/live playpath=sport1.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/sport1.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ss/sport1_de.png</thumbnail>
+</item>
+
+<item>
+<title>Viva</title>
+<link>rtmp://89.252.59.16:1935/live playpath=viva.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/viva.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/vv/viva_de.png</thumbnail>
+</item>
+
+<item>
+<title>Tele 5</title>
+<link>rtmp://89.252.59.16:1935/live playpath=tele5.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/tele5.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/tt/tele5_de.png</thumbnail>
+</item>
+
+<item>
+<title>ARTE HD  [COLOR=FFFF0000]Geo Blocked In Some Areas[/COLOR]</title>
+<link>rtmp://rm-edge-4.cdn2.streamago.tv:80/streamagoedge/1926?idutente=1926&idcanale=819&pwd= playpath=819 swfUrl=http://www.streamago.tv/app/StreamVideo.swf live=true timeout=15 pageUrl=http://www.streamago.tv/iframe/1926/</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/aa/arte_de_hd.jpg</thumbnail>
+</item>
+
+<item>
+<title>SAT1</title>
+<link>rtmp://89.252.59.16:1935/live playpath=sat1.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/sat1.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/ss/sat1.jpg</thumbnail>
+</item>
+
+<item>
+<title>VOX</title>
+<link>rtmp://89.252.59.16:1935/live playpath=vox.stream swfUrl=http://static.live-stream.tv/player/player.swf pageUrl=http://www.live-stream.tv/online/fernsehen/vox.html#tab2-tab live=true timeout=15</link>
+<thumbnail>http://4.bp.blogspot.com/-2_2zXUYZJHs/UW02asERLiI/AAAAAAAAAJM/GkUg6mll8X8/s1600/Vox.jpg</thumbnail>
+</item>
+
+<item>
+<title>Mühlviertel TV</title>
+<link>rtmp://sw6dh53qqk9ox.cloudfront.net/ app=cfx/st/ playpath=mp4:videos-hl/live-37da01ce-6ddd-4f1b-986d-06344d6d38f6.mp4 swfUrl=http://www.muehlviertel.tv/static/jwplayer/jwplayer.flash.swf live=true timeout=15 pageUrl=http://www.muehlviertel.tv/live</link>
+<thumbnail>http://www.sterngartl-kutscher.at/content/media/muehlviertel-tv_logo.jpg</thumbnail>
+</item>
+
+<item>
+<title>Alex Berlin HD</title>
+<link>http://alex-stream.rosebud-media.de:1935/live/alexlivetv.smil/hasbahca.m3u8</link>
+<thumbnail>http://i1.ytimg.com/i/CPttRaDpZZ2Rg14A4R9BGg/mq1.jpg?v=51b0b649</thumbnail>
+</item>
+
+<item>
+<title>Center TV Düsseldorf</title>
+<link>rtsp://80.246.121.90/ctv</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/cc/center_tv.jpg</thumbnail>
+</item>
+
+<item>
+<title>DW Europa  [COLOR=FFFF0000]Geo Blocked In Some Areas[/COLOR]</title>
+<link>http://94.242.221.141/hls/a-lo/stream100.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/dd/deutsche_welle_tv.jpg</thumbnail>
+</item>
+
+<item>
+<title>NRW TV</title>
+<link>http://streaming001.broadcast.tneg.de:1935/nrwtv/_definst_/nrwtv.stream/playlist.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/nn/nrw_tv.jpg</thumbnail>
+</item>
+
+<item>
+<title>OK Mainz</title>
+<link>rtmp://streaming.ok54.de/tv/ playpath=oktvmainz swfUrl=http://vjs.zencdn.net/4.6/video-js.swf pageUrl=http://ok-mainz.de/livestream/ live=true timeout=15</link>
+<thumbnail>http://d1i6vahw24eb07.cloudfront.net/s106296q.png</thumbnail>
+</item>
+
+<item>
+<title>RBB Berlin</title>
+<link>http://rbb_live-lh.akamaihd.net/i/rbb_berlin@108248/master.m3u8?bkup=off&amp;__b__=875</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/rr/rbb_brandenburg.jpg</thumbnail>
+</item>
+
+<item>
+<title>TV Aktuell</title>
+<link>http://tvaktuellr.iptv-playoutcenter.de:1935/tvaktuellr/tvaktuellr.stream_3/hasbahca.m3u8</link>
+<thumbnail>http://www.testberichte.de/imgs/p_imgs/RTL+RTL+Aktuell+(18.45+++19.10+Uhr)-55-55168.jpg</thumbnail>
+</item>
+
+<item>
+<title>TV Oberfranken 1 HD</title>
+<link>http://tvoberfranken.iptv-playoutcenter.de:1935/tvoberfranken/tvoberfranken.stream_1/playlist.m3u8</link>
+<thumbnail>http://www.lyngsat-logo.com/logo/tv/tt/tv_oberfranken.jpg</thumbnail>
+</item>
+
+</channel>

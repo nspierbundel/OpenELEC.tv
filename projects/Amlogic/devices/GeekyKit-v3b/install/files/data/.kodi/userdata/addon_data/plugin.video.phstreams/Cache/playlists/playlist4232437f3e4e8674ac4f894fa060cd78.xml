@@ -1,0 +1,52 @@
+#######################################################################################################################################
+<poster>Team Phoenix</poster>
+<fanart>http://s20.postimg.org/id8xgs00t/Sports_Background.jpg</fanart>
+#######################################################################################################################################
+
+<dir>
+<name>Sky Sports</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Sports%20Networks/Sky%20Sports.xml</link>
+<thumbnail>http://s20.postimg.org/bqm9nlicd/Sky_Sports.png</thumbnail>
+</dir>
+
+<dir>
+<name>BEIN Sports</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Sports%20Networks/BEIN%20Sports.xml</link>
+<thumbnail>http://s20.postimg.org/j7vh2t7vh/BEIN_Sports.png</thumbnail>
+</dir>
+
+<dir>
+<name>NBC Sports Network</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Sports%20Networks/NBCSN.xml</link>
+<thumbnail>http://s20.postimg.org/6qotfncpp/NBCSN.png</thumbnail>
+</dir>
+
+<dir>
+<name>TSN Sports</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Sports%20Networks/TSN%20Sports.xml</link>
+<thumbnail>http://s20.postimg.org/d87pz5n31/TSN.png</thumbnail>
+</dir>
+
+<dir>
+<name>BT Sports</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Sports%20Networks/BT%20Sports.xml</link>
+<thumbnail>http://s20.postimg.org/kqqv7sefx/BT_Sport.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>PAC 12</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Sports%20Networks/PAC12.xml</link>
+<thumbnail>http://s20.postimg.org/qsyhya2vx/PAC_12.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Dolce Sports</name>
+<link>http://shanghai.watchkodi.com/Sections/Sports/Sports%20Networks/Dolce%20Sports.xml</link>
+<thumbnail>http://s20.postimg.org/ml3ppj1gd/Dolce_Sport.png</thumbnail>
+</dir>
+
+<dir>
+<name>SportTime</name>
+<link></link>
+<thumbnail>http://i29.tinypic.com/2b7kgl.jpg</thumbnail>
+</dir>

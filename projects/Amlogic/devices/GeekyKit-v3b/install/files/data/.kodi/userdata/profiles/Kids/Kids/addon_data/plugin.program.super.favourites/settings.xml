@@ -1,0 +1,30 @@
+<settings>
+    <setting id="ALLOW_PLAYLIST_DELETE" value="false" />
+    <setting id="AUTOSTART" value="false" />
+    <setting id="CACHERECOMMEND" value="true" />
+    <setting id="CONTEXT" value="false" />
+    <setting id="COPY_PLAYLISTS" value="false" />
+    <setting id="DEBUG" value="false" />
+    <setting id="DEFAULT_FANART" value="30114" />
+    <setting id="DEFAULT_IMAGE" value="" />
+    <setting id="FOLDER" value="special://profile/addon_data/plugin.program.super.favourites/" />
+    <setting id="INHERIT" value="true" />
+    <setting id="LOCATION" value="" />
+    <setting id="MANUAL_ID" value="1" />
+    <setting id="METARECOMMEND" value="true" />
+    <setting id="PLAY_PLAYLISTS" value="true" />
+    <setting id="REMOTE" value="false" />
+    <setting id="SHOWIMPORT" value="false" />
+    <setting id="SHOWIPLAY" value="true" />
+    <setting id="SHOWNEW" value="true" />
+    <setting id="SHOWRECOMMEND" value="true" />
+    <setting id="SHOWREMEMBER" value="true" />
+    <setting id="SHOWSEP" value="true" />
+    <setting id="SHOWSS" value="true" />
+    <setting id="SHOWUNAVAIL" value="false" />
+    <setting id="SHOWXBMC" value="true" />
+    <setting id="SHOW_FANART" value="true" />
+    <setting id="STRIPNUMBERS" value="true" />
+    <setting id="SYNOPSRECOMMEND" value="true" />
+    <setting id="VERSION" value="1.0.28" />
+</settings>

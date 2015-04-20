@@ -1,0 +1,26 @@
+{
+  "http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/json/sitelist?key=4eeb196d-a473-4634-a9da-397974138bf5": {
+    "resource": "/Users/Jules/Library/Application Support/Kodi/userdata/addon_data/weather.metoffice/cache/tmp9tbVd4", 
+    "expiry": "2015-04-20T22:22:34Z"
+  }, 
+  "http://datapoint.metoffice.gov.uk/public/data/val/wxobs/all/json/sitelist?key=4eeb196d-a473-4634-a9da-397974138bf5": {
+    "resource": "/Users/Jules/Library/Application Support/Kodi/userdata/addon_data/weather.metoffice/cache/tmpydHD2N", 
+    "expiry": "2015-04-20T22:21:40Z"
+  }, 
+  "http://datapoint.metoffice.gov.uk/public/data/val/wxobs/all/json/3772?res=hourly&key=4eeb196d-a473-4634-a9da-397974138bf5": {
+    "resource": "/Users/Jules/Library/Application Support/Kodi/userdata/addon_data/weather.metoffice/cache/tmpMAwTKl", 
+    "expiry": "2015-04-13T21:30:00Z"
+  }, 
+  "http://datapoint.metoffice.gov.uk/public/data/txt/wxfcs/regionalforecast/json/sitelist?key=4eeb196d-a473-4634-a9da-397974138bf5": {
+    "resource": "/Users/Jules/Library/Application Support/Kodi/userdata/addon_data/weather.metoffice/cache/tmpgInFfu", 
+    "expiry": "2015-04-20T22:22:53Z"
+  }, 
+  "http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/json/352409?res=daily&key=4eeb196d-a473-4634-a9da-397974138bf5": {
+    "resource": "/Users/Jules/Library/Application Support/Kodi/userdata/addon_data/weather.metoffice/cache/tmpoZN9Mt", 
+    "expiry": "2015-04-13T21:30:00Z"
+  }, 
+  "http://www.telize.com/geoip/": {
+    "resource": "/Users/Jules/Library/Application Support/Kodi/userdata/addon_data/weather.metoffice/cache/tmpW2mak9", 
+    "expiry": "2015-04-13T23:21:41Z"
+  }
+}
