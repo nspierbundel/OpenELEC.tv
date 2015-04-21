@@ -1,0 +1,35 @@
+<settings>
+    <setting id="ALLOW_PLAYLIST_DELETE" value="false" />
+    <setting id="AUTOSTART" value="false" />
+    <setting id="CACHE" value="2" />
+    <setting id="CACHERECOMMEND" value="true" />
+    <setting id="CONTEXT" value="false" />
+    <setting id="CONTEXT_STYLE" value="0" />
+    <setting id="COPY_PLAYLISTS" value="false" />
+    <setting id="DEBUG" value="false" />
+    <setting id="DEFAULT_FANART" value="1" />
+    <setting id="DEFAULT_IMAGE" value="/storage/.kodi/Backgrounds/Default.jpg" />
+    <setting id="DISPLAYNAME" value="Kodi" />
+    <setting id="DUMMY" value="" />
+    <setting id="FOLDER" value="special://profile/addon_data/plugin.program.super.favourites/" />
+    <setting id="HOTKEY" value="G" />
+    <setting id="INHERIT" value="true" />
+    <setting id="LOCATION" value="https://dropbox.com/s/ci5sd9pu3jmwc9j/Super%20Favourites.zip?dl=1" />
+    <setting id="MANUAL_ID" value="1" />
+    <setting id="METARECOMMEND" value="true" />
+    <setting id="PLAY_PLAYLISTS" value="true" />
+    <setting id="REMOTE" value="true" />
+    <setting id="SHOWIMPORT" value="false" />
+    <setting id="SHOWIPLAY" value="false" />
+    <setting id="SHOWNEW" value="false" />
+    <setting id="SHOWRECOMMEND" value="true" />
+    <setting id="SHOWREMEMBER" value="true" />
+    <setting id="SHOWSEP" value="false" />
+    <setting id="SHOWSS" value="false" />
+    <setting id="SHOWUNAVAIL" value="true" />
+    <setting id="SHOWXBMC" value="true" />
+    <setting id="SHOW_FANART" value="true" />
+    <setting id="STRIPNUMBERS" value="true" />
+    <setting id="SYNOPSRECOMMEND" value="true" />
+    <setting id="VERSION" value="1.0.29" />
+</settings>
