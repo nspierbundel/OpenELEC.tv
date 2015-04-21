@@ -1,0 +1,28 @@
+status: 200
+content-length: 1006
+content-location: http://www.bbc.co.uk/mediaselector/playlists/hds/pc/ak/bbc_one_hd.f4m
+x-amz-id-2: gT006dkkFQbLfsbso/WYgeCNHvq18UY0ob5VrbZFJQeiwsKM0cwIxOF55ggRFJpA4u2a6C+JNH8=
+x-cache-age: 683078
+accept-ranges: bytes
+server: nginx
+last-modified: Tue, 28 Oct 2014 23:08:35 GMT
+connection: keep-alive
+etag: "2b957257103850833b50dc97e30daa02"
+x-cache-hits: 578
+x-cache-action: HIT
+cache-control: max-age=31536000
+date: Tue, 21 Apr 2015 13:06:34 GMT
+x-amz-version-id: l24RtB4Y251mkr57rk.DbbaPenl78LKx
+x-amz-request-id: 8AF983ED8532B28F
+content-type: text/plain
+x-origin-route: xrt-ostore
+
+<manifest xmlns="http://ns.adobe.com/f4m/2.0">
+ <dvrInfo windowDuration="7200"/>
+<media href="http://vs-hds-uk-live.edgesuite.net/pool_4/live/bbc_one_hd/bbc_one_hd.isml/bbc_one_hd-audio_3%3D64000-video%3D281000.f4m" bitrate="345"/>
+<media href="http://vs-hds-uk-live.edgesuite.net/pool_4/live/bbc_one_hd/bbc_one_hd.isml/bbc_one_hd-audio_3%3D64000-video%3D437002.f4m" bitrate="501"/>
+<media href="http://vs-hds-uk-live.edgesuite.net/pool_4/live/bbc_one_hd/bbc_one_hd.isml/bbc_one_hd-audio_2%3D96000-video%3D827000.f4m" bitrate="923"/>
+<media href="http://vs-hds-uk-live.edgesuite.net/pool_4/live/bbc_one_hd/bbc_one_hd.isml/bbc_one_hd-audio_2%3D96000-video%3D1374000.f4m" bitrate="1470"/>
+<media href="http://vs-hds-uk-live.edgesuite.net/pool_4/live/bbc_one_hd/bbc_one_hd.isml/bbc_one_hd-audio_1%3D128000-video%3D2000000.f4m" bitrate="2128"/>
+<media href="http://vs-hds-uk-live.edgesuite.net/pool_4/live/bbc_one_hd/bbc_one_hd.isml/bbc_one_hd-audio_1%3D128000-video%3D3500000.f4m" bitrate="3628"/>
+</manifest>

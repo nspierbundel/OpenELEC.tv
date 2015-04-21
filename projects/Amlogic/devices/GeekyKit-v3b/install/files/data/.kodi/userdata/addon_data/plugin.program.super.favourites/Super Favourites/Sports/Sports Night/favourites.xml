@@ -1,0 +1,4 @@
+<favourites>
+	<favourite name="Sports Night" thumb="http://repository.bbtsip.tv/Logos/SPORTS/BBTS_sportsnight.png">PlayMedia(&quot;rtmp://freeview.fms.visionip.tv/live/sports_tonight-sports_tonight-live-25f-16x9-SD?sf_options=fanart%3Dhttp%3A%2F%2Frepository.bbtsip.tv%2FLogos%2FFolders%2Fsports.jpg%26winID%3D10025%26_options_sf&quot;)</favourite>
+	<favourite name="Sports Night HD" thumb="http://repository.bbtsip.tv/Logos/SPORTS/BBTS_sportsnight.png">PlayMedia(&quot;rtmp://freeview.fms.visionip.tv/live/sports_tonight-sports_tonight-live-25f-16x9-HD?sf_options=fanart%3Dhttp%3A%2F%2Frepository.bbtsip.tv%2FLogos%2FFolders%2Fsports.jpg%26winID%3D10025%26_options_sf&quot;)</favourite>
+</favourites>

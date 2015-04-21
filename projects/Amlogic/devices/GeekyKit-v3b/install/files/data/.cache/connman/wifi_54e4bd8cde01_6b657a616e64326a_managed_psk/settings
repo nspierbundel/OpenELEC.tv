@@ -1,0 +1,12 @@
+[wifi_54e4bd8cde01_6b657a616e64326a_managed_psk]
+Name=kezand2j
+SSID=6b657a616e64326a
+Frequency=2437
+Favorite=true
+Modified=1970-04-14T08:21:46.079750Z
+IPv4.method=dhcp
+IPv6.method=auto
+IPv6.privacy=disabled
+AutoConnect=true
+IPv4.DHCP.LastAddress=192.168.1.11
+Passphrase=legs1977

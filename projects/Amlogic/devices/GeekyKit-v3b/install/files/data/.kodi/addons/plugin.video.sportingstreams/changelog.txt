@@ -1,0 +1,36 @@
+[B]0.0.12[/B]
+Added: Various improvements
+
+[B]0.0.11[/B]
+Added: New channels
+
+[B]0.0.10[/B]
+Added: Bug fixes
+
+[B]0.0.9[/B]
+Added: Bug fixes
+
+[B]0.0.8[/B]
+Added: Bug fixes
+
+[B]0.0.7[/B]
+Added: Bug fixes
+
+[B]0.0.6[/B]
+Added: Bug fixes
+
+[B]0.0.5[/B]
+Added: Bug fixes
+
+[B]0.0.4[/B]
+Added: Support for more channels
+
+[B]0.0.3[/B]
+Added: Support for more channels
+
+[B]0.0.2[/B]
+Added: Support for the low bandwidth option
+
+[B]0.0.1[/B]
+Added: This is the first version
+

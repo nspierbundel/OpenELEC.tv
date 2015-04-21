@@ -1,0 +1,4 @@
+<favourites>
+	<favourite name="3D Movies" thumb="http://i.imgur.com/xLJ0nE0.jpg">ActivateWindow(10025,&quot;plugin://plugin.video.phstreams/?mode=ndmode&amp;name=3D%20Movies&amp;sound&amp;url=http%3a%2f%2ftuzla.watchkodi.com%2f3D.xml&amp;sf_options=fanart%3Dhttp%3A%2F%2Fhdwallpapers.lt%2Fwallpaper%2Fphoenix_fractalius_ember_furious_sparkle_hd-wallpaper-335785.jpg%26_options_sf&quot;,return)</favourite>
+	<favourite name="3D Movies" thumb="http://s20.postimg.org/90ips7nrx/3_D_movies.png">ActivateWindow(10025,&quot;plugin://plugin.video.phstreams/?mode=ndmode&amp;name=3D%20Movies&amp;sound&amp;url=http%3a%2f%2fzenica.watchkodi.com%2fMovies%2f3D%2520Movies.xml&quot;,return)</favourite>
+</favourites>
