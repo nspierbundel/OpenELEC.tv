@@ -1,8 +1,0 @@
-[ethernet_001518018131_cable]
-Name=Wired
-AutoConnect=true
-Modified=2033-10-22T06:39:24.932457Z
-IPv4.method=dhcp
-IPv6.method=off
-IPv6.privacy=disabled
-IPv4.DHCP.LastAddress=10.0.1.25

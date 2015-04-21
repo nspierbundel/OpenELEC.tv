@@ -1,5 +1,0 @@
-V 1.1
-small changes
-
-V 1.0
-Official kaosbox

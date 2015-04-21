@@ -1,7 +1,0 @@
-<settings>
-    <setting id="ASK_FILENAME" value="true" />
-    <setting id="ASK_FOLDER" value="false" />
-    <setting id="DOWNLOAD_FOLDER" value="special://userdata/addon_data/plugin.video.supercartoons/Downloads" />
-    <setting id="SEARCH" value="10" />
-    <setting id="VERSION" value="1.0.6" />
-</settings>
