@@ -1,7 +1,7 @@
 From 36a3fb15606bcb42f48ae4919c08b4516e1443c7 Mon Sep 17 00:00:00 2001
 From: Rainer Hochecker <fernetmenta@online.de>
 Date: Fri, 2 Jan 2015 10:02:09 +0100
-Subject: [PATCH 19/26] renderer: drop old tempfix firstflippage, did not work
+Subject: [PATCH 19/30] renderer: drop old tempfix firstflippage, did not work
  anyway because RendererHandlesPresent returned always
  true
 

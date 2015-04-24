@@ -1,0 +1,71 @@
+From 6dfe6e9b0993369eec5e76d2af042dab1fa64f6a Mon Sep 17 00:00:00 2001
+From: j1nx <p.steenbergen@j1nx.nl>
+Date: Sat, 10 May 2014 21:49:46 +0200
+Subject: [PATCH 28/30] Fix nynxboard related hardware based remote key
+ bounche
+
+Signed-off-by: j1nx <p.steenbergen@j1nx.nl>
+---
+ xbmc/input/linux/LinuxInputDevices.cpp |   27 ++++++++++++++++++++++++++-
+ 1 file changed, 26 insertions(+), 1 deletion(-)
+
+diff --git a/xbmc/input/linux/LinuxInputDevices.cpp b/xbmc/input/linux/LinuxInputDevices.cpp
+index c84930f..8618eda 100644
+--- a/xbmc/input/linux/LinuxInputDevices.cpp
++++ b/xbmc/input/linux/LinuxInputDevices.cpp
+@@ -96,6 +96,7 @@ typedef unsigned long kernel_ulong_t;
+ #include "LinuxInputDevices.h"
+ #include "input/MouseStat.h"
+ #include "utils/log.h"
++#include "settings/AdvancedSettings.h"
+ 
+ #ifndef BITS_PER_LONG
+ #define BITS_PER_LONG        (sizeof(long) * 8)
+@@ -687,11 +688,22 @@ void CLinuxInputDevice::SetLed(int led, int state)
+  * Input thread reading from device.
+  * Generates events on incoming data.
+  */
++
++long long int deltatime_usec(struct timeval ctime, struct timeval otime)
++{
++	long long delta = 0;
++	delta = (ctime.tv_sec - otime.tv_sec) * 1000000;
++	delta += (ctime.tv_usec - otime.tv_usec);
++	return delta;
++}
++
+ XBMC_Event CLinuxInputDevice::ReadEvent()
+ {
+   int readlen;
+   struct input_event levt;
+ 
++  static struct input_event levt_old;
++
+   XBMC_Event devt;
+ 
+   while (1)
+@@ -725,7 +737,20 @@ XBMC_Event CLinuxInputDevice::ReadEvent()
+       printf("CLinuxInputDevice: read error : %s\n", strerror(errno));
+       break;
+     }
+-
++	if ((levt.type == EV_KEY) && (levt.value == 1)) {
++    		// Check same key is pressed.
++    		if (levt.code == levt_old.code) {
++        		// Check the time difference of the events.
++        		if ( deltatime_usec(levt.time, levt_old.time) < ((long long)g_advancedSettings.m_usbhidrepeatdelay * 1000)) {
++            			// store the latest key event.
++            			levt_old = levt;
++            			// Jump back to the top of the while loop.
++            			continue;
++        		}				
++    		}			
++    		// store the latest key event.
++    		levt_old = levt;
++	}
+     if (!TranslateEvent(levt, devt))
+       continue;
+ 
+-- 
+1.7.10.4
+

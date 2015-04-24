@@ -1,7 +1,7 @@
 From 123697df08f5b74e6ef773dd02918909d8fe1a3b Mon Sep 17 00:00:00 2001
 From: Alex Deryskyba <alex@codesnake.com>
 Date: Sun, 21 Sep 2014 17:20:25 +0300
-Subject: [PATCH 11/26] Fix incorrect frame rate detection of some videos with
+Subject: [PATCH 11/30] Fix incorrect frame rate detection of some videos with
  variable frame rate.
 
 Use FFMPEG's r_frame_rate, if it as valid, as a video stream frame rate, otherwise use avg_frame_rate.

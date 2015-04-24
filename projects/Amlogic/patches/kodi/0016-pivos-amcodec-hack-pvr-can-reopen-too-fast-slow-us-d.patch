@@ -1,7 +1,7 @@
 From 0fc59c2d139b0340ad6d330487bfbe25aafb6c1a Mon Sep 17 00:00:00 2001
 From: davilla <davilla@4pi.com>
 Date: Wed, 3 Sep 2014 22:14:01 -0400
-Subject: [PATCH 16/26] pivos: [amcodec-hack] pvr can reopen too fast, slow us
+Subject: [PATCH 16/30] pivos: [amcodec-hack] pvr can reopen too fast, slow us
  down a little
 
 ---

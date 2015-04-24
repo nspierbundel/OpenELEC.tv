@@ -1,7 +1,7 @@
 From e7f4563c51376a1d64ffd516f744078b0b5d1223 Mon Sep 17 00:00:00 2001
 From: smallint <tahoma@gmx.de>
 Date: Sat, 16 Aug 2014 17:29:15 +0200
-Subject: [PATCH 21/26] renderer: improve rendering to gui and separate video
+Subject: [PATCH 21/30] renderer: improve rendering to gui and separate video
  layer
 
 ---

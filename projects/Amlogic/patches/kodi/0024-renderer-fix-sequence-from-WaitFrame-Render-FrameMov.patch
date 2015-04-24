@@ -1,7 +1,7 @@
 From 528238f93cb9beed04de865b3302d0a66966c369 Mon Sep 17 00:00:00 2001
 From: Rainer Hochecker <fernetmenta@online.de>
 Date: Fri, 23 Jan 2015 07:41:46 +0100
-Subject: [PATCH 24/26] renderer: fix sequence from WaitFrame, Render,
+Subject: [PATCH 24/30] renderer: fix sequence from WaitFrame, Render,
  FrameMove to WaitFrame, FrameMove, Render
 
 ---

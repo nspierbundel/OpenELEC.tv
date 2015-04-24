@@ -1,0 +1,46 @@
+From 18096430b90007688624baefe5c5b6d1f60a46a4 Mon Sep 17 00:00:00 2001
+From: j1nx <p.steenbergen@j1nx.nl>
+Date: Sat, 10 May 2014 21:56:52 +0200
+Subject: [PATCH 27/30] Add the new usbhidrepeatdelay to the advanced settings
+
+Signed-off-by: j1nx <p.steenbergen@j1nx.nl>
+---
+ xbmc/settings/AdvancedSettings.cpp |    2 ++
+ xbmc/settings/AdvancedSettings.h   |    1 +
+ 2 files changed, 3 insertions(+)
+
+diff --git a/xbmc/settings/AdvancedSettings.cpp b/xbmc/settings/AdvancedSettings.cpp
+index a1b68b5..996a9be 100644
+--- a/xbmc/settings/AdvancedSettings.cpp
++++ b/xbmc/settings/AdvancedSettings.cpp
+@@ -246,6 +246,7 @@ void CAdvancedSettings::Initialize()
+ 
+   m_remoteDelay = 3;
+   m_controllerDeadzone = 0.2f;
++  m_usbhidrepeatdelay = 200;
+ 
+   m_playlistAsFolders = true;
+   m_detectAsUdf = false;
+@@ -1033,6 +1034,7 @@ void CAdvancedSettings::ParseSettingsFile(const CStdString &file)
+ 
+   XMLUtils::GetInt(pRootElement, "remotedelay", m_remoteDelay, 1, 20);
+   XMLUtils::GetFloat(pRootElement, "controllerdeadzone", m_controllerDeadzone, 0.0f, 1.0f);
++  XMLUtils::GetUInt(pRootElement, "usbhidrepeatdelay", m_usbhidrepeatdelay, 0, 1000);
+   XMLUtils::GetUInt(pRootElement, "fanartres", m_fanartRes, 0, 1080);
+   XMLUtils::GetUInt(pRootElement, "imageres", m_imageRes, 0, 1080);
+ #if !defined(TARGET_RASPBERRY_PI)
+diff --git a/xbmc/settings/AdvancedSettings.h b/xbmc/settings/AdvancedSettings.h
+index ed91aba..d664487 100644
+--- a/xbmc/settings/AdvancedSettings.h
++++ b/xbmc/settings/AdvancedSettings.h
+@@ -239,6 +239,7 @@ class CAdvancedSettings : public ISettingCallback, public ISettingsHandler
+     StringMapping m_pathSubstitutions;
+     int m_remoteDelay; ///< \brief number of remote messages to ignore before repeating
+     float m_controllerDeadzone;
++    unsigned int m_usbhidrepeatdelay;
+ 
+     bool m_playlistAsFolders;
+     bool m_detectAsUdf;
+-- 
+1.7.10.4
+

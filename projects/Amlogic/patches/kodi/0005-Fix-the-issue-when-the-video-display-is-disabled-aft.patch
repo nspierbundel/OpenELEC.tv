@@ -1,7 +1,7 @@
 From 52036aab2065cba5362571ae040767c43b99a5ab Mon Sep 17 00:00:00 2001
 From: Alex Deryskyba <alex@codesnake.com>
 Date: Tue, 29 Jul 2014 10:31:07 +0300
-Subject: [PATCH 05/26] Fix the issue when the video display is disabled after
+Subject: [PATCH 05/30] Fix the issue when the video display is disabled after
  a resolution change
 
 ---

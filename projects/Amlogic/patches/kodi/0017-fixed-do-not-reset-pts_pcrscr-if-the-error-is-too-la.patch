@@ -1,7 +1,7 @@
 From 79d9d0b4f9964d83ab66dc5e517f76ff93807538 Mon Sep 17 00:00:00 2001
 From: davilla <davilla@4pi.com>
 Date: Sun, 21 Dec 2014 17:37:22 -0500
-Subject: [PATCH 17/26] fixed, do not reset pts_pcrscr if the error is too
+Subject: [PATCH 17/30] fixed, do not reset pts_pcrscr if the error is too
  large, it is just a dvdplayer transient discontinuity
 
 ---

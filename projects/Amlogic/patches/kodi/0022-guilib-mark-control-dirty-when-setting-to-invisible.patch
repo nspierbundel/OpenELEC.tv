@@ -1,7 +1,7 @@
 From 7ec4a6cc96f9c7b7d209d619332a420ea963ac0a Mon Sep 17 00:00:00 2001
 From: Rainer Hochecker <fernetmenta@online.de>
 Date: Mon, 5 Jan 2015 11:29:15 +0100
-Subject: [PATCH 22/26] guilib: mark control dirty when setting to invisible
+Subject: [PATCH 22/30] guilib: mark control dirty when setting to invisible
 
 ---
  xbmc/guilib/GUIControl.cpp |    2 ++

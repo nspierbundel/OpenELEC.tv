@@ -1,7 +1,7 @@
 From 56ab10af277ed13fbb4fb0e355b065968766066c Mon Sep 17 00:00:00 2001
 From: Rainer Hochecker <fernetmenta@online.de>
 Date: Fri, 13 Mar 2015 20:57:17 +0100
-Subject: [PATCH 26/26] guilib: only update scrollinfo if frametime did change
+Subject: [PATCH 26/30] guilib: only update scrollinfo if frametime did change
 
 ---
  xbmc/guilib/GUIFont.cpp |    3 ++-
