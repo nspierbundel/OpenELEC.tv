@@ -5,7 +5,7 @@
       <power>ActivateWindow(ShutdownMenu)</power>     <!-- Button 01 : Power -->
       <f10>Mute</f10>																	<!-- Button 02 : Mute -->
       <rewind>SkipPrevious</rewind>										<!-- Button 03 : SkipPrevious -->
-      <play_pause>Play</play_pause>										<!-- Button 04 : Play/Pause -->
+      <play_pause>PlayPause</play_pause>										<!-- Button 04 : Play/Pause -->
       <f7>SkipNext</f7>																<!-- Button 05 : SkipNext -->
       <f9>RunScript(service.openelec.settings)</f9>							<!-- Button 06 : WiFi -->
       <f3>Rewind</f3>																	<!-- Button 07 : Rewind -->
